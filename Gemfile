@@ -51,7 +51,6 @@ group :development do
   gem 'binding_of_caller'
   gem 'annotate'
   gem 'bcrypt'
-  # gem 'jquery-rails'
 end
 
 group :test do

@@ -6,14 +6,6 @@ class User < ApplicationRecord
     attr_reader :password
     after_initialize :ensure_session_token
 
-    # has_many :photos,
-    # primary_key: :photo_id,
-    # foreign_key: :author_id,
-    # class_name: :Photo
-    
-    # has_many :likes
-    # has_many :comments
-
   def self.find_by_credentials(username, password)
     user = User.find_by(username: username)
     user.is_password?(password) ? user : nil
@@ -29,7 +21,7 @@ class User < ApplicationRecord
   end
 
   def reset_session_token!
-    self.session_toke = SecureRandom.urlsafe_base64
+    self.session_token = SecureRandom.urlsafe_base64
     self.save!
     self.session_token
   end
