@@ -38,30 +38,46 @@ class SessionForm extends React.Component {
         if (this.props.formType === "login"){
         return (
             <div className="login-form-container">
+                <div>
+                    {/* <img className="main-logo" src="http://www.lovethispic.com/uploaded_images/spring_green_scenery.jpg" border="0" />    */}
+                </div>
                 <form onSubmit={this.handleSubmit} className="login-form-box">
-                    Welcome to 365px!
-          <br />
-                    Please {this.props.formType} or {this.props.navLink}
-                    {this.renderErrors()}
-                    <div className="login-form">
-                        <br />
-                        <label>Username:
-              <input type="text"
-                                value={this.state.username}
-                                onChange={this.update('username')}
-                                className="login-input"
-                            />
-                        </label>
-                        <br />
-                        <label>Password:
-              <input type="password"
-                                value={this.state.password}
-                                onChange={this.update('password')}
-                                className="login-input"
-                            />
-                        </label>
-                        <br />
-                        <input className="session-submit" type="submit" value={this.props.formType} />
+                    <div className="overall-form">
+
+                        <div className="login-welcome">Log In to 365px</div>
+
+                        <div className="login-form">
+
+                            <br />
+                            
+                            <label> Username
+                                <input type="text"
+                                    placeholder="Username"
+                                    value={this.state.username}
+                                    onChange={this.update('username')}
+                                    className="login-input"
+                                />
+                            </label>
+                            <br />
+                            <label> Password
+                                <input type="password"
+                                    placeholder="Password"
+                                    value={this.state.password}
+                                    onChange={this.update('password')}
+                                    className="login-input"
+                                />
+                            </label>
+
+                            <br />
+                            
+                            <input className="login-button" type="submit" value={this.props.formType} />
+                           
+                            <div className="error-message">
+                                {/* Please {this.props.formType} or {this.props.navLink} */}
+                                <br />
+                                {this.renderErrors()}
+                            </div>
+                        </div>
                     </div>
                 </form>
             </div>
@@ -70,6 +86,9 @@ class SessionForm extends React.Component {
         else{
             return(
                 <div className="signup-form-container">
+                <div>
+                        {/* <img className="main-logo" src="http://www.aljanh.net/data/archive/img/4064674657.jpeg" border="0" />    */}
+                </div>
                     <form onSubmit={this.handleSubmit} className="signup-form-box">
                         Welcome to 365px!
           <br />
