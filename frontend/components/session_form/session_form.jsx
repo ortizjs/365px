@@ -35,10 +35,11 @@ class SessionForm extends React.Component {
     }
 
     render() {
+        if (this.props.formType === "login"){
         return (
             <div className="login-form-container">
                 <form onSubmit={this.handleSubmit} className="login-form-box">
-                    Welcome to BenchBnB!
+                    Welcome to 365px!
           <br />
                     Please {this.props.formType} or {this.props.navLink}
                     {this.renderErrors()}
@@ -65,6 +66,40 @@ class SessionForm extends React.Component {
                 </form>
             </div>
         );
+        }
+        else{
+            return(
+                <div className="signup-form-container">
+                    <form onSubmit={this.handleSubmit} className="signup-form-box">
+                        Welcome to 365px!
+          <br />
+                        Please {this.props.formType} or {this.props.navLink}
+                        {this.renderErrors()}
+                        <div className="signup-form">
+                            <br />
+                            <label>Username:
+              <input type="text"
+                                    value={this.state.username}
+                                    onChange={this.update('username')}
+                                    className="signup-input"
+                                />
+                            </label>
+                            <br />
+                            <label>Password:
+              <input type="password"
+                                    value={this.state.password}
+                                    onChange={this.update('password')}
+                                    className="signup-input"
+                                />
+                            </label>
+                            <br />
+                            <input className="session-submit" type="submit" value={this.props.formType} />
+                        </div>
+                    </form>
+                </div>
+            )
+
+        }
     }
 }
 
