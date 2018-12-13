@@ -78,7 +78,7 @@ class SessionForm extends React.Component {
                         <div className="signup-form">
                             <br />
                             <label>Username:
-              <input type="text"
+                                <input type="text"
                                     value={this.state.username}
                                     onChange={this.update('username')}
                                     className="signup-input"
@@ -86,9 +86,33 @@ class SessionForm extends React.Component {
                             </label>
                             <br />
                             <label>Password:
-              <input type="password"
+                                <input type="password"
                                     value={this.state.password}
                                     onChange={this.update('password')}
+                                    className="signup-input"
+                                />
+                            </label>
+                            <br />
+                            <label>Email:
+                                <input type="text"
+                                    value={this.state.email}
+                                    onChange={this.update('email')}
+                                    className="signup-input"
+                                />
+                            </label>
+                            <br />
+                            <label>First Name:
+                                <input type="text"
+                                    value={this.state.first_name}
+                                    onChange={this.update('first_name')}
+                                    className="signup-input"
+                                />
+                            </label>
+                            <br />
+                            <label>Last Name:
+                                <input type="text"
+                                    value={this.state.last_name}
+                                    onChange={this.update('last_name')}
                                     className="signup-input"
                                 />
                             </label>
