@@ -1,0 +1,80 @@
+.splash-page-main-div {
+    // background-image: url('../../images/spring_green-scenery.jpg');
+    
+    height: 2000px;
+    width: 100%;
+    // border: 3px solid red;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.static_nav {
+    width:100%;
+    height: 60px;
+    border: 1px solid blue;
+    
+    
+}
+
+.header-section-div {
+    width:100%;
+    height: 436px;
+    background-image: url('https://www.wallpaperup.com/uploads/wallpapers/2013/03/06/48505/669565cbcba6f46c2b88c5cd88433288.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-position-y: 30%;
+    // border: 5px solid lawngreen;
+}
+
+.main-content{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    // border: 3px solid green;
+}
+
+.content{
+    color: white;
+    // border: 3px solid white;
+    width: 50%;
+}
+.splash-signup-link{
+    text-decoration-line: none;
+    color: white;
+}
+
+.splash-join-link{
+    font-size: 18px;
+    height: 50px;
+    width:156px;
+    background-color: #0099e5;
+    border-radius: 30px;
+    margin-left: 400px;
+    margin-right: 436px;
+
+
+}
+.splash-header {
+    font-size: 48px;
+    text-align: center;
+    text-rendering: optimizeLegibility;
+    font-family: "Helvetica Neue", HelveticaNeue, Helvetica, TeXGyreHeros, FreeSans, "Nimbus Sans L", "Liberation Sans", Arial, sans-serif;
+    max-width: 900px;
+    padding: 40px 0;
+    margin: 0 auto;
+    color: #FFF;
+}
+
+.header-sec-desc {
+    text-rendering: optimizeLegibility;
+    font-family: "Helvetica Neue", HelveticaNeue, Helvetica, TeXGyreHeros, FreeSans, "Nimbus Sans L", "Liberation Sans", Arial, sans-serif;
+    font-weight: normal;
+    color: #FFF;
+    margin-left: 200px;
+    margin-right: 100px;
+    max-width: 800px;
+}

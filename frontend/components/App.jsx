@@ -12,12 +12,13 @@ const App = () => (
             {/* <GreetingContainer /> */}
             
         </header>
-        <body/>
-        {/* <switch> */}
-            <AuthRoute exact path="/" component={SplashContainer} />
-            <AuthRoute exact path="/login" component={LogInFormContainer} />
-            <AuthRoute exact path="/signup" component={SignUpFormContainer} />
-        {/* </switch> */}
+        <body>
+            {/* <switch> */}
+                <AuthRoute exact path="/" component={SplashContainer} />
+                <AuthRoute exact path="/login" component={LogInFormContainer} />
+                <AuthRoute exact path="/signup" component={SignUpFormContainer} />
+            {/* </switch> */}
+        </body>
     </div>
 
 );
