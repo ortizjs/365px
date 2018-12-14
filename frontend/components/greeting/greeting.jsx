@@ -38,7 +38,12 @@ import { Link } from 'react-router-dom';
         let result = this.props.currentUser ? this.personalGreeting() : this.sessionLinks();
         return (
             <nav className="greeting-nav">
-                <img src={window.images.logo} alt=""/>
+                <div className="logo-image">
+                    <img src={window.images.logo} alt=""/>
+                </div>
+                <div className="empty-div">
+
+                </div>
                 
                 {result}
             </nav>
