@@ -22,11 +22,19 @@
 
 //SPLASH SECTION
 
-.splash-main-div {
+body{
+    background-image: url('https://wallpaperstock.net/san-francisco-wallpapers_2781_1152.jpg');
+    // background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+.splash-page-main-div {
     // background-image: url('../../images/spring_green-scenery.jpg');
-    background-image: url('http://www.imperativeinfo.com/wp-content/uploads/2014/02/Golden_Gate_B-sunset.jpg');
-    // height: 10px;
-    // width: 10px;
+    // background-image: url('https://linkedinbackground.com/download/xSan-Francisco.jpg.pagespeed.ic.MGxTlNDoB2.jpg');
+    // height: 100%;
+    // width: 100%;
+
 }
 //-------------------------------------------------------
 //LOGIN SECTION
@@ -74,8 +82,8 @@
     width: 500px;
     height: 500px;
     border: 1px solid blue;
-    margin-left: 300px;
-    margin-right: 300px;
+    // margin-left: 300px;
+    // margin-right: 300px;
     // background-color: aliceblue;
 
  }

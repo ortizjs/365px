@@ -3,8 +3,8 @@ import { Route, Redirect, Switch, Link, HashRouter } from 'react-router-dom';
 
 const Splash = () => {
     return(
-        <div className="splash-main-div">
-            <div>
+        <div className="splash-page-main-div">
+            <div className="header-section-dv">
                 <h3 className="splash-header">
                     Get inspired ad share your best photos
                 </h3>
@@ -16,7 +16,7 @@ const Splash = () => {
                     Find your home among the world's best photographers.
                 </h3>
                 <br />
-                <nav>
+                <nav className="splash-join-link">
                     <Link to="/signup" className="splash-signup-link">Join 365px</Link>
                 </nav>
             </div>

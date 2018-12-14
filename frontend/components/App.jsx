@@ -9,9 +9,10 @@ import SplashContainer from './splash/splash_page';
 const App = () => (
     <div>
         <header>
+            {/* <GreetingContainer /> */}
             
-            <GreetingContainer />
         </header>
+        <body/>
         {/* <switch> */}
             <AuthRoute exact path="/" component={SplashContainer} />
             <AuthRoute exact path="/login" component={LogInFormContainer} />
