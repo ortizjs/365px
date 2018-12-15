@@ -5,24 +5,53 @@ import { Link } from 'react-router-dom';
     class Greeting extends React.Component {
         
 
-    sessionLinks () {
-        return(
-            <nav className="greeting-nav">
+    // sessionLinks () {
+    //     return(
+    //         <nav className="greeting-nav">
 
-                <div className="nav-log-in-link">
-                    <Link to="/login">Login</Link>
-                </div>
-                <br />
-                <br />
-                <br />
+    //             <div className="nav-log-in-link">
+    //                 <Link to="/login">Login</Link>
+    //             </div>
+    //             <br />
+    //             <br />
+    //             <br />
+    //             <div className="nav-sign-up-link">
+    //                 <Link to="/signup">Sign up!</Link>
+    //             </div>
+    //             {/* &nbsp;or&nbsp; */}
+
+    //         </nav>
+    //     )
+        
+    // };
+
+    sessionLinks () {
+        if (this.props.location.pathname === "login") {
+            return (
                 <div className="nav-sign-up-link">
                     <Link to="/signup">Sign up!</Link>
                 </div>
-                {/* &nbsp;or&nbsp; */}
-
-            </nav>
-        )
-        
+            )
+        } else if (this.props.location.pathname === "signup") {
+            return (
+                <div className="nav-log-in-link">
+                    <Link to="/login">Login</Link>
+                </div>
+            )
+        } else if (this.props.location.pathname === "/") {
+            return (
+                <div>
+                    < div className = "nav-log-in-link" >
+                        <Link to="/login">Login</Link>
+                    </div >
+                    <br />
+                    <br />
+                    <div className="nav-sign-up-link">
+                        <Link to="/signup">Sign up!</Link>
+                    </div>
+                </div>
+            );
+        }
     };
 
     personalGreeting() {
@@ -32,16 +61,15 @@ import { Link } from 'react-router-dom';
                 <button className="header-button" onClick={this.props.logout}>Log Out</button>
             </hgroup>
         )
-        
     };
 
     render() {
-        debugger
+        // debugger
         let result = this.props.currentUser ? this.personalGreeting() : this.sessionLinks();
-        let backgroundColor;
-        if (this.props.location.pathname === "/" && !this.props.currentUser) {
-            backgroundColor = 
-        }
+        // let backgroundColor;
+        // if (this.props.location.pathname === "/" && !this.props.currentUser) {
+        //     backgroundColor = document.querySelector(".parent-div").style.background = ""
+        // }
 
         // let headerColor = this.props.location.pathname === "login" ? this.props.location.pathname === "signup" 
         return (
