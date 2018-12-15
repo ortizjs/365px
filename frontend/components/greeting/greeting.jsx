@@ -3,10 +3,11 @@ import { Link } from 'react-router-dom';
 
 // const Greeting = ({ currentUser, logout }) => {
     class Greeting extends React.Component {
+        
 
     sessionLinks () {
         return(
-            <nav className="login-signup-in-bar">
+            <nav className="greeting-nav">
 
                 <div className="nav-log-in-link">
                     <Link to="/login">Login</Link>
@@ -35,11 +36,18 @@ import { Link } from 'react-router-dom';
     };
 
     render() {
+        debugger
         let result = this.props.currentUser ? this.personalGreeting() : this.sessionLinks();
+        let backgroundColor;
+        if (this.props.location.pathname === "/" && !this.props.currentUser) {
+            backgroundColor = 
+        }
+
+        // let headerColor = this.props.location.pathname === "login" ? this.props.location.pathname === "signup" 
         return (
-            <nav className="greeting-nav">
+            <nav className="greeting-nav-outer">
                 <div className="logo-image">
-                    <img src={window.images.logo} alt=""/>
+                    <img className="image-" src={window.images.logo} alt=""/>
                 </div>
                 <div className="empty-div">
 

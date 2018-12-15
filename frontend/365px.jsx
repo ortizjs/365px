@@ -23,16 +23,6 @@ document.addEventListener("DOMContentLoaded", () => {
     ReactDOM.render(<Root store={store} />, root);
 });
 
-// document.addEventListener('DOMContentLoaded', () => {
-//     const store = configureStore();
-//     const root = document.getElementById('root');
-//     window.login = login;
-//     window.getState = store.getState;
-//     window.dispatch = store.dispatch; // testing purposes
-//     ReactDOM.render(<Root store={ store }/>, root);
-// });
-
-
 // let user1 = {
 //     userName: "jimmbo_123",
 //     email: "jimmy_h123@gmail.com",

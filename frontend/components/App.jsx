@@ -7,10 +7,9 @@ import LogInFormContainer from './session_form/login_form_container';
 import { AuthRoute, ProtectedRoute } from '../util/route_util';
 import SplashContainer from './splash/splash_page';
 const App = () => (
-    <div>
+    <div className="parent-div">
         <header>
-            {/* <GreetingContainer /> */}
-            
+            <GreetingContainer /> 
         </header>
         <body>
             {/* <switch> */}

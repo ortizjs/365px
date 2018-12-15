@@ -1,4 +1,5 @@
 import React from 'react';
+import GreetingContainer from '../greeting/greeting_container';
 
 class SessionForm extends React.Component {
     constructor(props) {
@@ -44,10 +45,11 @@ class SessionForm extends React.Component {
         if (this.props.formType === "login"){
         return (
             <div className="login-form-container">
-                <div>
+                {/* <div className="login-page-top-div"> */}
+                    {/* <GreetingContainer /> */}
                     {/* <img src={window.images.logo} alt="" /> */}
                     {/* <img className="main-logo" src="http://www.lovethispic.com/uploaded_images/spring_green_scenery.jpg" border="0" />    */}
-                </div>
+                {/* </div> */}
                 <form onSubmit={this.handleSubmit} className="login-form-box">
                     <div className="overall-form">
 

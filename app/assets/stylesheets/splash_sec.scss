@@ -8,25 +8,83 @@
     background-size: cover;
 }
 
-
-.static_nav {
-    width:100%;
-    height: 60px;
-    border: 1px solid blue;
-    
-    
-}
-
 .header-section-div {
     width:100%;
     height: 436px;
-    background-image: url('https://www.wallpaperup.com/uploads/wallpapers/2013/03/06/48505/669565cbcba6f46c2b88c5cd88433288.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-position-y: 30%;
     // border: 5px solid lawngreen;
 }
+
+.static-nav {
+    display: flex;
+    width:100%;
+    height: 15%;
+    // border: 1px solid blue;
+}
+
+.splash-page-link-button {
+    width: 150px;
+    height: 100%;
+    background-color: transparent;
+    // border: 1px solid purple;
+    background-image: url('../images/365pxlogo.png');
+    border: none;
+}
+
+.splash-page-link {
+    width: 150px;
+    height: 100%;
+}
+
+.splash-nav-log-sign-buttons{
+    display: flex; 
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.splash-page-login-button {
+    width: 80px;
+    height: 50%;
+    background-color: transparent;
+    border-radius: 15px;
+    margin-top: 15px;
+    margin-right: 15px;
+    border: none;
+}
+
+.splash-page-login-link {
+    width: 150px;
+    height: 100%;
+    text-decoration-line: none;
+    font-family: "Helvetica Neue", HelveticaNeue, Helvetica, TeXGyreHeros, FreeSans, "Nimbus Sans L", "Liberation Sans", Arial, sans-serif;
+    // font-style: bold; 
+    font-size: 15px;
+    color: white;
+}
+
+.splash-page-signup-button {
+    width: 83px;
+    height: 50%;
+    background-color: #0099e5;
+    border-radius: 15px;
+    margin-top: 15px;
+    margin-right: 50px;
+    border: none;
+}
+
+.splash-page-signup-link {
+    width: 150px;
+    height: 100%;
+    text-decoration-line: none;
+    color: white;
+    font-family: "Helvetica Neue", HelveticaNeue, Helvetica, TeXGyreHeros, FreeSans, "Nimbus Sans L", "Liberation Sans", Arial, sans-serif;
+    font-style: bold; 
+    font-size: 15px;
+}
+
 
 .main-content{
     width: 100%;
@@ -40,32 +98,20 @@
 .content{
     color: white;
     // border: 3px solid white;
-    width: 50%;
-}
-.splash-signup-link{
-    text-decoration-line: none;
-    color: white;
+    width: 100%;
 }
 
-.splash-join-link{
-    font-size: 18px;
-    height: 50px;
-    width:156px;
-    background-color: #0099e5;
-    border-radius: 30px;
-    margin-left: 400px;
-    margin-right: 436px;
-
-
-}
 .splash-header {
+    width: 700px;
     font-size: 48px;
     text-align: center;
     text-rendering: optimizeLegibility;
     font-family: "Helvetica Neue", HelveticaNeue, Helvetica, TeXGyreHeros, FreeSans, "Nimbus Sans L", "Liberation Sans", Arial, sans-serif;
-    max-width: 900px;
-    padding: 40px 0;
-    margin: 0 auto;
+    width: 900px;
+    // padding: 40px 0;
+    // margin-right: 200px;
+    margin-right: 400px;
+    margin-left: 270px;
     color: #FFF;
 }
 
@@ -74,7 +120,23 @@
     font-family: "Helvetica Neue", HelveticaNeue, Helvetica, TeXGyreHeros, FreeSans, "Nimbus Sans L", "Liberation Sans", Arial, sans-serif;
     font-weight: normal;
     color: #FFF;
-    margin-left: 200px;
-    margin-right: 100px;
-    max-width: 800px;
+    margin-left: 425px;
+    margin-right: 350px;
+    width: 700px;
+}
+
+.splash-signup-link{
+    text-decoration-line: none;
+    color: white;
+}
+
+.splash-join-button{
+    font-size: 18px;
+    height: 50px;
+    width:156px;
+    background-color: #0099e5;
+    border-radius: 30px;
+    margin-left: 625px;
+    margin-right: 300px;
+    border: none;
 }

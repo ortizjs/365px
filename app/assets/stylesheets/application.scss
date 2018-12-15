@@ -32,6 +32,7 @@ h1, h2, p, strong, em, a {
 @import "base/reset.scss";
 
 /* / // Core */
+@import "splash_sec.scss";
 @import "api/sessions.scss";
 /* @import "base/fonts.scss";
 @import "base/layout.scss"; */
@@ -42,4 +43,7 @@ h1, h2, p, strong, em, a {
 // Components
 @import "components"; */
 
- 
+ .parent-div {
+   background-image: url('https://www.wallpaperup.com/uploads/wallpapers/2013/03/06/48505/669565cbcba6f46c2b88c5cd88433288.jpg');
+   background-repeat: no-repeat;
+ }
