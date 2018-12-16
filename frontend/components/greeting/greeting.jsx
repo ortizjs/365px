@@ -7,24 +7,18 @@ import { Link } from 'react-router-dom';
     sessionLinks () {
         if (this.props.location.pathname === "/login") {
             return (
-                <div>
-                    {/* <div className="logo-image">
-                        <img className="image-" src={window.images.logo} alt="" />
-                    </div> */}
-                    <div className="nav-sign-up-link">
-                        <Link to="/signup">Sign up!</Link>
-                    </div>
+                <div className="nav-var-right">
+                    <button className="nav-sign-up-button">
+                        <Link to="/signup" className="nav-sign-up-link">Sign Up</Link>
+                    </button>
                 </div>
             )
         } else if (this.props.location.pathname === "/signup") {
             return (
-                <div>
-                    {/* <div className="logo-image">
-                        <img className="image-" src={window.images.logo} alt="" />
-                    </div> */}
-                    <div className="nav-log-in-link">
-                        <Link to="/login">Login</Link>
-                    </div>
+                <div className="nav-var-right">
+                    <button className="nav-login-button">
+                        <Link to="/login" className="nav-login-link">Login</Link>
+                    </button>
                 </div>
             )
         } else if (this.props.location.pathname === "/" && !this.props.currentUser) {
@@ -71,7 +65,8 @@ import { Link } from 'react-router-dom';
             return (
                 <nav className="greeting-nav">
                     <div className="logo-image">
-                        <img className="image-" src={window.images.logo} alt="" />
+                        <Link to="/" className="image-"><img src={window.images.logo} alt="" /></Link>
+                        {/* <img className="image-" src={window.images.logo} alt="" /> */}
                     </div>
                     <div className="result-div">
                         {result}

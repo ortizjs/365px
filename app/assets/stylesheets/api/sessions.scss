@@ -57,30 +57,64 @@ body{
     justify-content: flex-end;
 }
 
-
- .nav-log-in-link {
-    //  display: flex;
-    //  justify-content: space-between;
-     padding: 10px;
-     padding-right: 30px;
+  .nav-login-button {
+    display: flex;
+    justify-content: center;
+    width: 83px;
+    height: 100%;
+    // background-color: #34bf49;
+    // border-radius: 15px;
+    // margin-top: 15px;
+    margin-right: 50px;
+    border: none;
+    padding-top: 10px;
+    padding-right: 20px;
  }
 
- .nav-sign-up-link {
-    //  height: 50%;
-    //  width: 25%;
-    //  display: flex;
-    //  justify-content: space-between;
-    //  padding: 10px;
-    //  padding-right: 20px;
+.nav-login-link {
+     width: 150px;
+    height: 100%;
+    text-decoration-line: none;
+    font-family: "Helvetica Neue", HelveticaNeue, Helvetica, TeXGyreHeros, FreeSans, "Nimbus Sans L", "Liberation Sans", Arial, sans-serif;
+    font-size: 15px;
+    color: black;
+    line-height: 5px;
+    padding-left: 8px;
+    padding-bottom: 8px;
+}
+  .nav-sign-up-button {
+    display: flex;
+    justify-content: center;
+    width: 83px;
+    height: 100%;
+    background-color: #34bf49;
+    // border-radius: 15px;
+    // margin-top: 15px;
+    margin-right: 50px;
+    border: none;
+    padding-top: 10px;
+    padding-right: 20px;
  }
+
+.nav-sign-up-link {
+     width: 150px;
+    height: 100%;
+    text-decoration-line: none;
+    font-family: "Helvetica Neue", HelveticaNeue, Helvetica, TeXGyreHeros, FreeSans, "Nimbus Sans L", "Liberation Sans", Arial, sans-serif;
+    font-size: 13px;
+    color: white;
+    line-height: 5px;
+    padding-left: 8px;
+    padding-bottom: 8px;
+}
 
  .login-form-container {
      display: flex;
-     height: 100%;
+     height: 900px;
      width: 100%;
-   display: flex;
-   justify-content: center;
-   background: white; 
+    display: flex;
+    justify-content: center;
+    background: #f5f6f7; 
  }
 
  .login-page-top-div{
@@ -94,19 +128,20 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 5px;
+    margin-top: 60px;
     width: 500px;
     height: 500px;
-    border: 1px solid lawngreen;
+    // border: 1px solid white;
+    //lawngreen
     // margin-left: 300px;
     // margin-right: 300px;
     // background-color: aliceblue;
 
  }
 
- .login-form {
-    //  padding-bottom: 500px;
- }
+//  .login-form {
+//     //  padding-bottom: 500px;
+//  }
 
  .login-welcome{
     padding-top: 40px;
@@ -122,29 +157,56 @@ body{
  }
 
   .login-input{
-    border: 1px solid #71767a;
-    height: 20px;
+    border: 1px solid #e2e8ed;
+    border-radius: 5px;
+    height: 25px;
     width: 96%;
     padding: 5px;
     margin-bottom: 10px;
+    width: 76.5%;
+    margin-left: 35px;
     // margin-left: 20px;
  }
 
  .login-username-label {
-    font-size: 18px;
+    font-size: 15px;
     font-style: bold;
     font-weight: normal;
-    color: #525558;
+    color: #767879f0;
     text-rendering: optimizeLegibility;
     font-family: "Helvetica Neue", HelveticaNeue, Helvetica, TeXGyreHeros, FreeSans, "Nimbus Sans L", "Liberation Sans", Arial, sans-serif;
+    width: 80%;
+    margin-left: 35px;
  }
  .login-password-label {
-     font-size: 18px;
+    font-size: 15px;
     font-style: bold;
     font-weight: normal;
-    color: #525558;
+    color: #767879f0;
     text-rendering: optimizeLegibility;
     font-family: "Helvetica Neue", HelveticaNeue, Helvetica, TeXGyreHeros, FreeSans, "Nimbus Sans L", "Liberation Sans", Arial, sans-serif;
+    width: 80%;
+    margin-left: 35px;
+ }
+
+ .no-account-div {
+     display: flex;
+     justify-content: center;
+ }
+
+ .no-account-msg {
+    font-family: "Helvetica Neue", HelveticaNeue, Helvetica, TeXGyreHeros, FreeSans, "Nimbus Sans L", "Liberation Sans", Arial, sans-serif;
+    font-size: 13px;
+    color: #95989af0;
+ }
+
+ .no-account-signup-link {
+    text-decoration-line: none;
+    color: lightskyblue;
+    font-family: "Helvetica Neue", HelveticaNeue, Helvetica, TeXGyreHeros, FreeSans, "Nimbus Sans L", "Liberation Sans", Arial, sans-serif;
+    font-size: 13px;
+    margin-top: 22px;
+    margin-left: 5px;
  }
 
 //  .message{
@@ -154,9 +216,13 @@ body{
 //  }
 
  .overall-form{
-     border: 1px solid red;
-     width: 60%;
+    //  align-items: center;
+     border: 1px solid white;
+     //red
+     border-radius: 3px; 
+     width: 75%;
      height: 97%;
+     background-color: white;
 
  }
 
@@ -168,8 +234,9 @@ body{
     border-color: #34bf49;
     border-radius: 3px;
     height: 40px;
-    width: 100%;
+    width: 80%;
     color: white;
+    margin-left: 35px;
  }
 
  .guest-login-button{
@@ -180,13 +247,10 @@ body{
     border-color: #3b5998;
     border-radius: 3px;
     height: 40px;
-    width: 100%;
+    width: 80%;
     color: white;
-
+    margin-left: 35px;
  }
-
-
-
 
 
 //SIGNUP SECTION

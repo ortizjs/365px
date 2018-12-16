@@ -1,4 +1,5 @@
 import React from 'react';
+import { Route, Redirect, Switch, Link, HashRouter } from 'react-router-dom';
 import GreetingContainer from '../greeting/greeting_container';
 
 class SessionForm extends React.Component {
@@ -61,7 +62,7 @@ class SessionForm extends React.Component {
                             
                             <label className="login-username-label"> Username
                                 <input type="text"
-                                    placeholder="Username"
+                                    // placeholder="Username"
                                     value={this.state.username}
                                     onChange={this.update('username')}
                                     className="login-input"
@@ -70,7 +71,7 @@ class SessionForm extends React.Component {
                             <br />
                             <label className="login-password-label"> Password
                                 <input type="password"
-                                    placeholder="Password"
+                                    // placeholder="Password"
                                     value={this.state.password}
                                     onChange={this.update('password')}
                                     className="login-input"
@@ -83,7 +84,10 @@ class SessionForm extends React.Component {
                             <br />
                             <br />
                             <input className="guest-login-button" type="submit" value="Log in as guest" onClick={() => this.props.processForm(guest)}/>
-                           
+                            <div className="no-account-div">
+                                <h5 className="no-account-msg">Don't have an account? </h5>
+                                <Link to="/signup" className="no-account-signup-link">Sign Up</Link>
+                            </div>
                             <div className="error-message">
                                 {/* Please {this.props.formType} or {this.props.navLink} */}
                                 <br />
