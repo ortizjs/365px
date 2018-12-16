@@ -1,112 +1,12 @@
 // Place all the styles related to the api/sessions controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.image{
-  top:0;
-  left:0;
-  right:0;
-  bottom:0;
-  height: 700px;
-  position:relative;
-}
-
-
-
-
-
-
-//SPLASH SECTION
-
-body{
-    // background-image: url('https://wallpaperstock.net/san-francisco-wallpapers_2781_1152.jpg');
-    // background-repeat: no-repeat;
-    // background-size: cover;
-    // background-position: center;
-
-}
-
-
 //-------------------------------------------------------
 //LOGIN SECTION
 
  
 
- .greeting-nav {
-     border: 1px solid blue;
-     width: 100%;
-     height: 45px;
-     display: flex; 
-     
-    //  justify-content: space-between;
-    //  padding: 10px;
-    //  padding-right: 10px;
- }
-
-.logo-image {
-    display: flex;
-    justify-content: flex-start;
-    padding-right: 700px; 
-}
-.image- {
-    width: 30%;
-    // padding-right: 50px;
-}
-
-.result-div {
-    display: flex; 
-    justify-content: flex-end;
-}
-
-  .nav-login-button {
-    display: flex;
-    justify-content: center;
-    width: 83px;
-    height: 100%;
-    // background-color: #34bf49;
-    // border-radius: 15px;
-    // margin-top: 15px;
-    margin-right: 50px;
-    border: none;
-    padding-top: 10px;
-    padding-right: 20px;
- }
-
-.nav-login-link {
-     width: 150px;
-    height: 100%;
-    text-decoration-line: none;
-    font-family: "Helvetica Neue", HelveticaNeue, Helvetica, TeXGyreHeros, FreeSans, "Nimbus Sans L", "Liberation Sans", Arial, sans-serif;
-    font-size: 15px;
-    color: black;
-    line-height: 5px;
-    padding-left: 8px;
-    padding-bottom: 8px;
-}
-  .nav-sign-up-button {
-    display: flex;
-    justify-content: center;
-    width: 83px;
-    height: 100%;
-    background-color: #34bf49;
-    // border-radius: 15px;
-    // margin-top: 15px;
-    margin-right: 50px;
-    border: none;
-    padding-top: 10px;
-    padding-right: 20px;
- }
-
-.nav-sign-up-link {
-     width: 150px;
-    height: 100%;
-    text-decoration-line: none;
-    font-family: "Helvetica Neue", HelveticaNeue, Helvetica, TeXGyreHeros, FreeSans, "Nimbus Sans L", "Liberation Sans", Arial, sans-serif;
-    font-size: 13px;
-    color: white;
-    line-height: 5px;
-    padding-left: 8px;
-    padding-bottom: 8px;
-}
+ 
 
  .login-form-container {
      display: flex;
@@ -131,17 +31,7 @@ body{
     margin-top: 60px;
     width: 500px;
     height: 500px;
-    // border: 1px solid white;
-    //lawngreen
-    // margin-left: 300px;
-    // margin-right: 300px;
-    // background-color: aliceblue;
-
  }
-
-//  .login-form {
-//     //  padding-bottom: 500px;
-//  }
 
  .login-welcome{
     padding-top: 40px;
@@ -165,7 +55,6 @@ body{
     margin-bottom: 10px;
     width: 76.5%;
     margin-left: 35px;
-    // margin-left: 20px;
  }
 
  .login-username-label {
@@ -209,12 +98,6 @@ body{
     margin-left: 5px;
  }
 
-//  .message{
-//      padding-top: 10px;
-//      padding-right: 50px;
-
-//  }
-
  .overall-form{
     //  align-items: center;
      border: 1px solid #ededee;
@@ -254,16 +137,42 @@ body{
 
 
 //SIGNUP SECTION
- //-------------------------------------------------------------------------------------------------------
+//-------------------------------------------------------------------------------------------------------
 //SIGNUP SECTION
-   .signup-form-container {
-//    display: flex;
-//    justify-content: center;
-//    margin-top: 100px;
-    display: -webkit-inline-flex;
+//    .signup-form-container {
+// //    display: flex;
+// //    justify-content: center;
+// //    margin-top: 100px;
+//     display: -webkit-inline-flex;
+//     justify-content: center;
+// //    margin-top: 100px;
+// //    margin-right: 100px;
+//     background: white; 
+//    /* background-image: url("http://www.lovethispic.com/uploaded_images/spring_green_scenery.jpg"); */
+//  }
+
+ .signup-form-container {
+    display: flex;
+    height: 700px;
+    width: 100%;
+    display: flex;
     justify-content: center;
-//    margin-top: 100px;
-//    margin-right: 100px;
-    background: white; 
-   /* background-image: url("http://www.lovethispic.com/uploaded_images/spring_green_scenery.jpg"); */
+    background: #f5f6f7; 
+ }
+
+  .signup-form-box {
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    margin-top: 60px;
+    width: 500px;
+    height: 500px;
+ }
+
+ .message-div {
+     align-items: center;
+ }
+
+ .join-banner {
+
  }

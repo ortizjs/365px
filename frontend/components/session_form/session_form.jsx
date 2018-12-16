@@ -102,14 +102,17 @@ class SessionForm extends React.Component {
         else{
             return(
                 <div className="signup-form-container">
-                <div>
-                        {/* <img className="main-logo" src="http://www.aljanh.net/data/archive/img/4064674657.jpeg" border="0" />    */}
-                </div>
                     <form onSubmit={this.handleSubmit} className="signup-form-box">
-                        Welcome to 365px!
-          <br />
-                        Please {this.props.formType} or {this.props.navLink}
-                        {this.renderErrors()}
+                        <div className="message-div">
+                            <h1>
+                                Join 365px!
+                            </h1>
+                            <h2>
+                                Share your photos, get inspired, and grow your skills
+                            </h2>
+                        </div>
+                        <br />
+                        {/* Please {this.props.formType} or {this.props.navLink} */}
                         <div className="signup-form">
                             <br />
                             <label>  Username:
@@ -153,6 +156,7 @@ class SessionForm extends React.Component {
                             </label>
                             <br />
                             <input className="session-submit" type="submit" value={this.props.formType} />
+                            {this.renderErrors()}
                         </div>
                     </form>
                 </div>

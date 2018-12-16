@@ -1,0 +1,79 @@
+.greeting-nav {
+     border: 1px solid blue;
+     width: 100%;
+     height: 45px;
+     display: flex; 
+     
+    //  justify-content: space-between;
+    //  padding: 10px;
+    //  padding-right: 10px;
+ }
+
+.logo-image {
+    display: flex;
+    justify-content: flex-start;
+    padding-right: 700px; 
+    // padding-bottom: 50px;
+    // margin-bottom: 200px;
+}
+.image- {
+    width: 30%;
+    padding-bottom: 50px;
+    // padding-right: 50px;
+}
+
+.result-div {
+    display: flex; 
+    justify-content: flex-end;
+}
+
+  .nav-login-button {
+    display: flex;
+    justify-content: center;
+    width: 83px;
+    height: 100%;
+    // background-color: #34bf49;
+    // border-radius: 15px;
+    // margin-top: 15px;
+    margin-right: 50px;
+    border: none;
+    padding-top: 10px;
+    padding-right: 20px;
+ }
+
+.nav-login-link {
+     width: 150px;
+    height: 100%;
+    text-decoration-line: none;
+    font-family: "Helvetica Neue", HelveticaNeue, Helvetica, TeXGyreHeros, FreeSans, "Nimbus Sans L", "Liberation Sans", Arial, sans-serif;
+    font-size: 15px;
+    color: black;
+    line-height: 5px;
+    padding-left: 8px;
+    padding-bottom: 8px;
+}
+  .nav-sign-up-button {
+    display: flex;
+    justify-content: center;
+    width: 83px;
+    height: 100%;
+    background-color: #34bf49;
+    // border-radius: 15px;
+    // margin-top: 15px;
+    margin-right: 50px;
+    border: none;
+    padding-top: 10px;
+    padding-right: 20px;
+ }
+
+.nav-sign-up-link {
+     width: 150px;
+    height: 100%;
+    text-decoration-line: none;
+    font-family: "Helvetica Neue", HelveticaNeue, Helvetica, TeXGyreHeros, FreeSans, "Nimbus Sans L", "Liberation Sans", Arial, sans-serif;
+    font-size: 13px;
+    color: white;
+    line-height: 5px;
+    padding-left: 8px;
+    padding-bottom: 8px;
+}
