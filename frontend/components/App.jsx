@@ -11,11 +11,11 @@ const App = () => (
         {/* <header> */}
         {/* </header> */}
         {/* <body> */}
-            <switch>
+            <Switch>
             {/* <AuthRoute exact path={"/login" || "/signup"} component={GreetingContainer} /> */}
                 {/* <AuthRoute exact path="/signup" component={GreetingContainer} /> */}
                 <Route path="/" component={GreetingContainer} />
-            </switch>
+            </Switch>
             {/* <GreetingContainer /> */}
             <AuthRoute exact path="/" component={SplashContainer} />
             <AuthRoute exact path="/login" component={LogInFormContainer} />
