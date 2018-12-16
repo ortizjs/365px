@@ -44,6 +44,9 @@ h1, h2, p, strong, em, a {
 @import "components"; */
 
  .parent-div {
-   background-image: url('https://www.wallpaperup.com/uploads/wallpapers/2013/03/06/48505/669565cbcba6f46c2b88c5cd88433288.jpg');
-   background-repeat: no-repeat;
+  //  background-image: url('https://www.wallpaperup.com/uploads/wallpapers/2013/03/06/48505/669565cbcba6f46c2b88c5cd88433288.jpg');
+  //  background-repeat: no-repeat;
  }
+
+ //doucument.querySelector(".parent-div").style 
+ //document.querySelector(".parent-div").style.background = ""

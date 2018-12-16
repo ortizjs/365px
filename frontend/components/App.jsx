@@ -8,16 +8,19 @@ import { AuthRoute, ProtectedRoute } from '../util/route_util';
 import SplashContainer from './splash/splash_page';
 const App = () => (
     <div className="parent-div">
-        <header>
-            <GreetingContainer /> 
-        </header>
-        <body>
-            {/* <switch> */}
-                <AuthRoute exact path="/" component={SplashContainer} />
-                <AuthRoute exact path="/login" component={LogInFormContainer} />
-                <AuthRoute exact path="/signup" component={SignUpFormContainer} />
-            {/* </switch> */}
-        </body>
+        {/* <header> */}
+        {/* </header> */}
+        {/* <body> */}
+            <switch>
+            {/* <AuthRoute exact path={"/login" || "/signup"} component={GreetingContainer} /> */}
+                {/* <AuthRoute exact path="/signup" component={GreetingContainer} /> */}
+                <Route path="/" component={GreetingContainer} />
+            </switch>
+            {/* <GreetingContainer /> */}
+            <AuthRoute exact path="/" component={SplashContainer} />
+            <AuthRoute exact path="/login" component={LogInFormContainer} />
+            <AuthRoute exact path="/signup" component={SignUpFormContainer} />
+        {/* </body> */}
     </div>
 
 );
