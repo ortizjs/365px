@@ -116,15 +116,17 @@ class SessionForm extends React.Component {
                             {/* Please {this.props.formType} or {this.props.navLink} */}
                             <div className="signup-form">
                                 <br />
-                                <label>  Username:
+                                {/* <label className="signup-username-label">  Username: */}
+                                <label className="signup-labels">  Username:
                                     <input type="text"
                                         value={this.state.username}
                                         onChange={this.update('username')}
+                                        // className="login-input"
                                         className="signup-input"
                                     />
-                                </label>
+                                </label >
                                 <br />
-                                <label>  Password:
+                                <label className="signup-labels">  Password:
                                     <input type="password"
                                         value={this.state.password}
                                         onChange={this.update('password')}
@@ -132,7 +134,7 @@ class SessionForm extends React.Component {
                                     />
                                 </label>
                                 <br />
-                                <label>Email:
+                                <label className="signup-labels">Email:
                                     <input type="text"
                                         value={this.state.email}
                                         onChange={this.update('email')}
@@ -140,7 +142,7 @@ class SessionForm extends React.Component {
                                     />
                                 </label>
                                 <br />
-                                <label>First Name:
+                                <label className="signup-labels">First Name:
                                     <input type="text"
                                         value={this.state.first_name}
                                         onChange={this.update('first_name')}
@@ -148,7 +150,7 @@ class SessionForm extends React.Component {
                                     />
                                 </label>
                                 <br />
-                                <label>Last Name:
+                                <label className="signup-labels">Last Name:
                                     <input type="text"
                                         value={this.state.last_name}
                                         onChange={this.update('last_name')}

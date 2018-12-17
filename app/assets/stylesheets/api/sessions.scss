@@ -180,7 +180,7 @@
  }
 
  .signup-form {
-    margin-left: 100px;
+    // margin-left: 100px;
  }
 
  .message-div {
@@ -215,4 +215,27 @@
     border: 1px solid #ededee;
     border-radius: 3px;
     margin-left: 525px;
+ }
+
+ .signup-input{
+    border: 1px solid #e2e8ed;
+    border-radius: 5px;
+    height: 15px;
+    width: 96%;
+    padding: 5px;
+    margin-bottom: 10px;
+    width: 76.5%;
+    margin-left: 35px;
+ }
+
+//  .signup-username-label {
+ .signup-labels {
+    font-size: 15px;
+    font-style: bold;
+    font-weight: normal;
+    color: #767879f0;
+    text-rendering: optimizeLegibility;
+    font-family: "Helvetica Neue", HelveticaNeue, Helvetica, TeXGyreHeros, FreeSans, "Nimbus Sans L", "Liberation Sans", Arial, sans-serif;
+    width: 80%;
+    margin-left: 35px;
  }
