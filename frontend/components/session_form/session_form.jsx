@@ -104,6 +104,7 @@ class SessionForm extends React.Component {
                 <div className="signup-form-container">
                     <div className="signup-inner">
                         <form onSubmit={this.handleSubmit} className="signup-form-box">
+                            {/* {this.renderErrors()} */}
                             <div className="message-div">
                                 <h1 className="join-banner">
                                     Join 365px!
@@ -158,8 +159,8 @@ class SessionForm extends React.Component {
                                     />
                                 </label>
                                 <br />
-                                <input className="session-submit" type="submit" value={this.props.formType} />
-                                {this.renderErrors()}
+                                <input className="session-submit-button" type="submit" value={this.props.formType} />
+                                {/* {this.renderErrors()} */}
                             </div>
                         </form>
                         <div className="bottom-terms-conatiner">
@@ -167,7 +168,9 @@ class SessionForm extends React.Component {
                                 By Signing up, you agree to our Terms of Service
                             </div>
                             <div className="login-instead">
-                                Already have an account? Log in 
+                                Already have an account? 
+                                <Link to="/login" className="bottom-login">Log in</Link>
+                                {/* {this.renderErrors()} */}
                             </div>
                         </div>
                     </div>

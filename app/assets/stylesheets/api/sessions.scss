@@ -180,12 +180,12 @@
  }
 
  .signup-form {
-    // margin-left: 100px;
+    // margin-bottom: 1000px;
  }
 
  .message-div {
     //  align-items: center;
-     align-self: center;
+    //  align-self: center;
  }
 
  .join-banner {
@@ -193,6 +193,7 @@
     font-family: "Helvetica Neue", HelveticaNeue, Helvetica, TeXGyreHeros, FreeSans, "Nimbus Sans L", "Liberation Sans", Arial, sans-serif;
     color: #525558;
     font-size: 36px;
+    margin-top: 20px;
  }
 
  .join-message {
@@ -204,6 +205,8 @@
     -webkit-font-smoothing: antialiased;
     width: 85%;
     margin-left: 30px;
+    margin-top: 5px;
+    margin-bottom: 0px;
  }
 
  .bottom-terms-conatiner {
@@ -228,14 +231,45 @@
     margin-left: 35px;
  }
 
-//  .signup-username-label {
  .signup-labels {
     font-size: 15px;
-    font-style: bold;
     font-weight: normal;
     color: #767879f0;
     text-rendering: optimizeLegibility;
     font-family: "Helvetica Neue", HelveticaNeue, Helvetica, TeXGyreHeros, FreeSans, "Nimbus Sans L", "Liberation Sans", Arial, sans-serif;
     width: 80%;
     margin-left: 35px;
+    // margin-bottom: 100px;
+ }
+
+ .session-submit-button {
+    margin-left: 173px;
+    border-radius: 5px;
+    width: 50px;
+ }
+ .signup-tos-statement {
+    font-size: 12px;
+    font-weight: normal;
+    color: #767879f0;
+    text-rendering: optimizeLegibility;
+    font-family: "Helvetica Neue", HelveticaNeue, Helvetica, TeXGyreHeros, FreeSans, "Nimbus Sans L", "Liberation Sans", Arial, sans-serif;
+    margin-top: 30px;
+    margin-left: 70px;
+ }
+ .login-instead {
+    font-size: 12px;
+    font-weight: normal;
+    color: #767879f0;
+    text-rendering: optimizeLegibility;
+    font-family: "Helvetica Neue", HelveticaNeue, Helvetica, TeXGyreHeros, FreeSans, "Nimbus Sans L", "Liberation Sans", Arial, sans-serif;
+    margin-top: 5px;
+    margin-left: 110px;
+ }
+ .bottom-login { 
+    margin-left: 5px;
+    text-decoration-line: none;
+    font-family: "Helvetica Neue", HelveticaNeue, Helvetica, TeXGyreHeros, FreeSans, "Nimbus Sans L", "Liberation Sans", Arial, sans-serif;
+    // font-size: 13px;
+    color: #0099e5;
+    line-height: 5px;
  }
