@@ -12,6 +12,7 @@
 #
 
 class Photo < ApplicationRecord
-    validates, title, presence: true
-    
+    validates :title, presence: true
+
+    has_one_attached :attached_photo
 end
