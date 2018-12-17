@@ -53,7 +53,7 @@ import { Link } from 'react-router-dom';
         return(
             <div className="personal-image-div">
                 <div className="avatar">
-                    <img className="avater-image" src={window.images.avatar} alt="" />
+                    <img className="avatar-image" src={window.images.avatar} alt="" />
                     {/* <h2 className="header-name">Hello, {this.props.currentUser.first_name}!</h2> */}
                     {/* <button className="header-logout-button" onClick={this.props.logout}>Log Out</button> */}
                 </div>
