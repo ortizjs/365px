@@ -48,11 +48,33 @@ import { Link } from 'react-router-dom';
             </div>
         )
     };
+
+    userImage() {
+        return(
+            <div className="personal-image-div">
+                <div className="avatar">
+                    <img className="avater-image" src={window.images.avatar} alt="" />
+                    {/* <h2 className="header-name">Hello, {this.props.currentUser.first_name}!</h2> */}
+                    {/* <button className="header-logout-button" onClick={this.props.logout}>Log Out</button> */}
+                </div>
+            </div>
+        );
+    }
+
+    logoutButton() {
+        if (this.props.currentUser) {
+            return (
+                <button className="header-logout-button" onClick={this.props.logout}>Log Out</button>
+            )
+        }
+    }
     
 
     render() {
         // debugger
-            let result = this.props.currentUser ? this.personalGreeting() : this.sessionLinks();
+            // let result = this.props.currentUser ? this.personalGreeting() : this.sessionLinks();
+            let result = this.props.currentUser ? this.userImage() : this.sessionLinks();
+            let logoutB = this.logoutButton();
             let currentUserCheck;
 
         if (this.props.location.pathname === "/" && !this.props.currentUser) {
@@ -69,7 +91,10 @@ import { Link } from 'react-router-dom';
                         {/* <img className="image-" src={window.images.logo} alt="" /> */}
                     </div>
                     <div className="result-div">
-                        {result}
+                        <div className="inner-result-div">
+                            {result}
+                            {logoutB}
+                        </div>
                     </div>
                 </nav>
             )

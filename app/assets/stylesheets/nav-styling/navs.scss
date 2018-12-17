@@ -24,7 +24,18 @@
 
 .result-div {
     display: flex; 
-    justify-content: flex-end;
+    justify-content: space-between;
+    // justify-content: flex-end;
+}
+
+.inner-result-div {
+    display: flex; 
+    justify-content: space-between;
+}
+
+.avatar {
+    width: 40px;
+    height: 50px;
 }
 
   .nav-login-button {
