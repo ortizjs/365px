@@ -9,20 +9,15 @@ import SplashContainer from './splash/splash_page';
 import PhotoIndexContainer from './photos/photos_index_container';
 const App = () => (
     <div className="parent-div">
-        {/* <header> */}
-        {/* </header> */}
-        {/* <body> */}
             <Switch>
             {/* <AuthRoute exact path={"/login" || "/signup"} component={GreetingContainer} /> */}
                 {/* <AuthRoute exact path="/signup" component={GreetingContainer} /> */}
                 <Route path="/" component={GreetingContainer} />
             </Switch>
-            {/* <GreetingContainer /> */}
             <ProtectedRoute path="/photos" component={PhotoIndexContainer} />
             <AuthRoute exact path="/" component={SplashContainer} />
             <AuthRoute exact path="/login" component={LogInFormContainer} />
             <AuthRoute exact path="/signup" component={SignUpFormContainer} />
-        {/* </body> */}
     </div>
 
 );
