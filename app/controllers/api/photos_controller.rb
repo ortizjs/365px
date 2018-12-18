@@ -19,6 +19,14 @@ class Api::PhotosController < ApplicationController
         end
     end
 
+    def update
+
+    end
+
+    def destroy 
+        
+    end
+
     private
     def photo_post_params
         params.require(:photo).permit(:title, :photographer_id, :attached_photo)    
