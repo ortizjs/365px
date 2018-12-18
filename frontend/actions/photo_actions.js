@@ -1,22 +1,22 @@
 import * as PhotoAPIUtil from '../util/photo_api_util';
 
-export const RECEIVE_PHOTOS = 'RECEIVE_BENCHES';
-export const RECEIVE_PHOTO = 'RECEIVE_BENCH';
-export const REMOVE_PHOTO = 'RECEIVE_BENCH';
+export const RECEIVE_PHOTOS = 'RECEIVE_PHOTOS';
+export const RECEIVE_PHOTO = 'RECEIVE_PHOTO';
+export const REMOVE_PHOTO = 'REMOVE_PHOTO';
 
 export const receivePhotos = (photos) => ({
     type: RECEIVE_PHOTOS,
-    photos
+    photos: photos
 });
 
 export const receivePhoto = (photo) => ({
     type: RECEIVE_PHOTO,
-    photo
+    photo: photo
 });
 
-export const removePhoto = (id) => ({
+export const removePhoto = (photo) => ({
     type: REMOVE_PHOTO,
-    id
+    id: photo.id
 });
 
 export const fetchPhotos = () => dispatch => (
@@ -36,6 +36,7 @@ export const updatePhoto = (photo) => dispatch => (
 );
 
 export const deletePhoto = (id) => dispatch => (
-    PhotoAPIUtil.deletePhoto(id).then(photo => dispatch(removePhoto()))
+    PhotoAPIUtil.deletePhoto(id).then(id => dispatch(removePhoto(id)))
 );
+
 
