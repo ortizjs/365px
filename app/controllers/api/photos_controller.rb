@@ -1,6 +1,7 @@
 class Api::PhotosController < ApplicationController
     
     def index 
+        # debugger
         @photos = Photo.all
         render :index
     end 
@@ -24,7 +25,7 @@ class Api::PhotosController < ApplicationController
     end
 
     def destroy 
-        
+
     end
 
     private

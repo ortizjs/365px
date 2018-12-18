@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import configureStore from './store/store';
 import Root from './components/root';
 import * as commands from './util/session_api_util';
+import * as photo_commands from './util/photo_api_util';
 import {login} from './actions/session_actions';
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -21,6 +22,9 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     const root = document.getElementById('root');
     ReactDOM.render(<Root store={store} />, root);
+
+    window.fetchPhotos = fetchPhotos;
+    window.fetchPhoto = fetchPhoto;
 });
 
 // let user1 = {
