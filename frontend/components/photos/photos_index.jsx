@@ -1,31 +1,45 @@
 import React from 'react';
 import PhotoIndexItem from './photos_index_item';
-import UploadPhotoFormContainer from './upload_post_form_container';
+import UploadPhotoFormContainer from './upload_photo_form_container';
 
-class PhotoIndex extends React.Component {
+class PhotosIndex extends React.Component {
+    // constructor(props){
+    //     super(props);
+    //     // this.state = this.props;
+    // //     this.state = {
+    // //         photos: Object.values(this.props.photos)
+    // // };
+
+    // }
     componentDidMount(){
+        // debugger
         this.props.fetchPhotos();
     }
 
     render() {
+        // debugger
         let photos = this.props.photos.map( photo => {
             return (
-                <PhotoIndexItem 
-                key={photo.id}
-                photo={photo}
-                editPhoto={this.props.editPhoto}
-                deletePhoto={this.props.deletePhoto}
-                />
-            )
+                <ul>
+                    <li>{photo.title}</li>
+                    <img src={photo.photo_url} alt=""/>
+                    <PhotoIndexItem
+                    key = {photo.id}
+                    photo={photo}
+                    photo_url={photo.photo_url}
+                    />
+                </ul>
+            );
         });
+        
         return (
             <div>
                 <ul>
-                    {photos}
+                   {photos}
                 </ul>
             </div>
         );
     }
 }
 
-export default PhotoIndex;
+export default PhotosIndex;

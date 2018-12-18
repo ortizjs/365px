@@ -11,12 +11,12 @@ const mSTP = ( state, ownProps ) => {
     });
 };
 
-const mDTP = dispatch => {
+const mDTP = (dispatch) => {
     return ({
-        fetchPhotos: () => dispatch(fetchPhotos()),
+        fetchPhotos: () => dispatch(fetchPhotos())
         // editPhoto: (photo) => dispatch(updatePhoto(photo)),
         // deletePhoto: (id) => dispatch(deletePhoto(id))
     });
 };
 
-export default withRouter(connect(mSTP, mDTP)(PhotosIndex));
+export default connect(mSTP, mDTP)(PhotosIndex);

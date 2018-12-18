@@ -23,9 +23,9 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     const root = document.getElementById('root');
     ReactDOM.render(<Root store={store} />, root);
-    // window.getState = store.getState;
-    // window.dispatch = store.dispatch; // just for testing!
-    // window.fetchPhotos = fetchPhotos;
+    window.getState = store.getState;
+    window.dispatch = store.dispatch; // just for testing!
+    window.fetchPhotos = fetchPhotos;
     // window.fetchPhoto = fetchPhoto;
 });
 
