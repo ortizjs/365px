@@ -1,9 +1,5 @@
 import merge from 'lodash/merge';
-
-import {
-    RECEIVE_PHOTOS,
-    RECEIVE_PHOTO,
-    REMOVE_PHOTO} from '../actions/photo_actions';
+import { RECEIVE_PHOTOS, RECEIVE_PHOTO, REMOVE_PHOTO } from '../actions/photo_actions';
 
 const PhotosReducer = (oldState = {}, action) => {
     Object.freeze(oldState);

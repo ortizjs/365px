@@ -3,8 +3,9 @@ import ReactDOM from 'react-dom';
 import configureStore from './store/store';
 import Root from './components/root';
 import * as commands from './util/session_api_util';
-import * as photo_commands from './util/photo_api_util';
+import * as commands2 from './util/photo_api_util';
 import {login} from './actions/session_actions';
+import { fetchPhotos, fetchPhoto} from './actions/photo_actions';
 
 document.addEventListener("DOMContentLoaded", () => {
     let store;
