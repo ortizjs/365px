@@ -2,16 +2,25 @@ class Api::PhotosController < ApplicationController
     
     def index 
         @photos = Photo.all
-        render "api/photos/index"
+        render :index
     end 
     
     def show 
         @photo = Photo.find(params[:id])
-        render "api/photos/show"
+        render :show
+    end
+
+    def create 
+        @photo = Photo.new(photo_post_params)
+        if @photo.save
+            render :show 
+        else
+            render json: @photo.errors.full_messages, status: 404
+        end
     end
 
     private
-    def photo.params
-        params.require(:photo).permit(:title, :photographer_id)    
+    def photo_post_params
+        params.require(:photo).permit(:title, :photographer_id, :attached_photo)    
     end
 end
