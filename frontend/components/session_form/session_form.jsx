@@ -83,7 +83,9 @@ class SessionForm extends React.Component {
                             <input className="login-button" type="submit" value="Log In" />
                             <br />
                             <br />
-                            <input className="guest-login-button" type="submit" value="Log in as guest" onClick={() => this.props.processForm(guest)}/>
+                            <input className="guest-login-button" type="submit" value="Log in as guest" 
+                            // onClick={() => this.props.processForm(guest)}/>
+                            onClick={() => this.props.processForm(guest).then(() => this.props.history.push("/users"))}/>
                             <div className="no-account-div">
                                 <h5 className="no-account-msg">Don't have an account? </h5>
                                 <Link to="/signup" className="no-account-signup-link">Sign Up</Link>
@@ -170,7 +172,9 @@ class SessionForm extends React.Component {
                             <div className="login-instead">
                                 Already have an account? 
                                 <Link to="/login" className="bottom-login">Log in</Link>
-                                {/* {this.renderErrors()} */}
+                                <div className="signup-form-errors">
+                                    {this.renderErrors()}
+                                </div>
                             </div>
                         </div>
                     </div>

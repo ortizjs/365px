@@ -7,6 +7,7 @@ import LogInFormContainer from './session_form/login_form_container';
 import { AuthRoute, ProtectedRoute } from '../util/route_util';
 import SplashContainer from './splash/splash_page';
 import PhotoIndexContainer from './photos/photos_index_container';
+import UploadPhotoFormContainer from './photos/upload_photo_form_container';
 const App = () => (
     <div className="parent-div">
             <Switch>
@@ -14,7 +15,8 @@ const App = () => (
                 {/* <AuthRoute exact path="/signup" component={GreetingContainer} /> */}
                 <Route path="/" component={GreetingContainer} />
             </Switch>
-            <ProtectedRoute path="/photos" component={PhotoIndexContainer} />
+            <ProtectedRoute path="/users" component={PhotoIndexContainer} />
+            <ProtectedRoute path="/photos" component={UploadPhotoFormContainer} />
             <AuthRoute exact path="/" component={SplashContainer} />
             <AuthRoute exact path="/login" component={LogInFormContainer} />
             <AuthRoute exact path="/signup" component={SignUpFormContainer} />

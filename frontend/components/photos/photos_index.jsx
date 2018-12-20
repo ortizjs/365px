@@ -24,14 +24,14 @@ class PhotosIndex extends React.Component {
                     <li>{photo.title}</li>
                     <img src={photo.photo_url} alt=""/>
                     <PhotoIndexItem
-                    key = {photo.id}
-                    photo={photo}
-                    photo_url={photo.photo_url}
+                        key={photo.id}
+                        photo={photo}
+                        photo_url={photo.photo_url}
                     />
                 </ul>
             );
         });
-        
+
         return (
             <div>
                 <ul>
