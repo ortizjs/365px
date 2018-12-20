@@ -28,11 +28,11 @@ export const fetchPhoto = (id) => dispatch => (
 );
 
 export const createPhoto = (photo) => dispatch => (
-    PhotoAPIUtil.createPhoto(photo).then(photo => dispatch(receivePhotos(photo)))
+    PhotoAPIUtil.createPhoto(photo).then(photo => dispatch(receivePhoto(photo)))
 );
 
 export const updatePhoto = (photo) => dispatch => (
-    PhotoAPIUtil.updatePhoto(photo).then(photo => dispatch(receivePhotos(photo)))
+    PhotoAPIUtil.updatePhoto(photo).then(photo => dispatch(receivePhoto(photo)))
 );
 
 export const deletePhoto = (id) => dispatch => (

@@ -12,7 +12,9 @@ class Api::PhotosController < ApplicationController
     end
 
     def create 
+        # debugger
         @photo = Photo.new(photo_post_params)
+        @photo.photographer_id = current_user.id
         if @photo.save
             render :show 
         else

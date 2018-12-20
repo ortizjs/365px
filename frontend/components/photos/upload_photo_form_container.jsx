@@ -4,9 +4,11 @@ import UploadForm from './upload_photo_form';
 import { createPhoto } from '../../actions/photo_actions';
 
 const mSTP = (state, ownProps) => {
+    let currentUser = state.currentUser;
+    // debugger
     let photo = {
         title: "",
-        photographer_id: "",
+        photographerId: "",
         photoFile: null
     };
     return ({
@@ -16,7 +18,7 @@ const mSTP = (state, ownProps) => {
 
 const mDTP = (dispatch) => {
     return ({
-        action: (photo) => dispatch(createPhoto(photo))
+        createPhoto: (photo) => dispatch(createPhoto(photo))
     });
 };
 
