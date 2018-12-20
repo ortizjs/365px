@@ -9,6 +9,7 @@ export default class UploadForm extends React.Component {
         this.handleFile = this.handleFile.bind(this);
         // this.state = Object.assign({}, this.props.photo, {photoFile: null});
         // this.state = this.props.photo;
+        // debugger
     }
 
     handleInput(field) {
@@ -44,12 +45,12 @@ export default class UploadForm extends React.Component {
                 onChange={this.handleInput("title")}/>
                 {/* onChange={this.handleInput.bind(this)}/> */}
                 
-                 <label htmlFor="photographer-id"> Photographer Id</label>
+                {/* <label htmlFor="photographer-id"> Photographer Id</label>
                 <input type="text"
                 id="photographer-id"
                 value={this.state.photographerId}
-                onChange={this.handleInput("photographerId")}/>
-                {/* onChange={this.handleInput.bind(this)}/> */}
+                onChange={this.handleInput("photographerId")}/> */}
+
                 <input type ="file" 
                     onChange={this.handleFile}/>
                 <button> Upload a new Photo!</button>

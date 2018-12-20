@@ -4,11 +4,11 @@ import UploadForm from './upload_photo_form';
 import { createPhoto } from '../../actions/photo_actions';
 
 const mSTP = (state, ownProps) => {
-    let currentUser = state.currentUser;
+    let currentUserId = state.entities.users[1].id;
     // debugger
     let photo = {
         title: "",
-        photographerId: "",
+        photographerId: currentUserId,
         photoFile: null
     };
     return ({
