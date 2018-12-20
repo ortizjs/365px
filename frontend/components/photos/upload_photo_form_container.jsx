@@ -16,7 +16,7 @@ const mSTP = (state, ownProps) => {
 
 const mDTP = (dispatch) => {
     return ({
-        createPhoto: (photo) => dispatch(createPhoto(photo))
+        action: (photo) => dispatch(createPhoto(photo))
     });
 };
 

@@ -13,7 +13,8 @@
 }
 
 .header-section-div {
-    width:100%;
+    // width:100%;
+    min-width: 1020px;
     height: 570px;
     background-image: url('https://www.wallpaperup.com/uploads/wallpapers/2013/03/06/48505/669565cbcba6f46c2b88c5cd88433288.jpg');
     background-repeat: no-repeat;
@@ -92,22 +93,25 @@
 
 
 .main-content{
-    width: 100%;
+    max-width: 960px;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 80%;
+    margin: 0 auto;
     // border: 3px solid green;
 }
 
 .content{
+    display: flex;
+    flex-direction: column;
     color: white;
     // border: 3px solid white;
     width: 100%;
 }
 
 .splash-header {
-    width: 700px;
+    // width: 700px;
     font-size: 48px;
     text-align: center;
     text-rendering: optimizeLegibility;
@@ -115,8 +119,8 @@
     width: 900px;
     // padding: 40px 0;
     // margin-right: 200px;
-    margin-right: 400px;
-    margin-left: 270px;
+    // margin-right: 400px;
+    // margin-left: 270px;
     color: #FFF;
 }
 
@@ -125,10 +129,16 @@
     font-family: "Helvetica Neue", HelveticaNeue, Helvetica, TeXGyreHeros, FreeSans, "Nimbus Sans L", "Liberation Sans", Arial, sans-serif;
     font-weight: normal;
     color: #FFF;
+    margin: 0 auto;
     margin-top: 25px;
-    margin-left: 425px;
-    margin-right: 350px;
-    width: 700px;
+    text-align: center;
+    // margin-left: 425px;
+    // margin-right: 350px;
+    // width: 700px;
+}
+.signup-button-div {
+    max-width: 960px;
+    margin: 0 auto;
 }
 
 .splash-signup-link{
@@ -142,7 +152,9 @@
     width:160px;
     background-color: #0099e5;
     border-radius: 30px;
-    margin-left: 625px;
-    margin-right: 300px;
+    margin-top: 20px;
+    // margin-left: 625px;
+    // margin-right: 300px;
+
     border: none;
 }

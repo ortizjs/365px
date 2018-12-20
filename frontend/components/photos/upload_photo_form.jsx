@@ -21,9 +21,9 @@ export default class UploadForm extends React.Component {
     handleSubmit(e) {
         e.preventDefualt();
         let formData = new FormData();
-        formData.append("photo[title]")
-        this.props.action(this.state);
-
+        formData.append("photo[title]", this.state.title);
+        formData.append("photo[attached_photo]", this.state.photoFile);
+        this.props.createPhoto(formData);
     }
 
     render() {

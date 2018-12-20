@@ -23,17 +23,19 @@ const Splash = () => {
 
                 <div className="main-content">
                     <div className="content">
-                        <h1 className="splash-header">
+                        <div className="splash-header">
                             Get inspired and share your best photos
-                        </h1>
+                        </div>
 
                         <h2 className="header-sec-desc">
                             Find your home among the world's best photographers.
                         </h2>
+                        <div className="signup-button-div">
+                            <button className="splash-join-button">
+                                <Link to="/signup" className="splash-signup-link">Join 365px</Link>
+                            </button>
 
-                        <button className="splash-join-button">
-                            <Link to="/signup" className="splash-signup-link">Join 365px</Link>
-                        </button>
+                        </div>
                     </div>
                 </div>
 
