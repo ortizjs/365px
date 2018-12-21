@@ -175,9 +175,11 @@
     // justify-content: center;
     // align-items: center;
     margin-top: 77px;
-    margin-left: 525px; 
+   //  margin-left: 525px; 
+   margin: 0 auto;
     width: 400px;
     height: 463px;
+    margin-top: 125px;
  }
 
  .signup-form {
@@ -218,7 +220,8 @@
     background-color: white;
     border: 1px solid #ededee;
     border-radius: 3px;
-    margin-left: 525px;
+    margin: 0 auto;
+   //  margin-left: 525px;
  }
 
  .signup-input{

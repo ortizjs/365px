@@ -49,5 +49,19 @@ h1, h2, p, strong, em, a {
   //  background-repeat: no-repeat;
 //  }
 
+.parent-div {
+  display: flex;
+  flex-direction: column;
+}
+
+.app-photos-div {
+  display: flex;
+  flex-direction: column;
+  max-width: 960px;
+  margin: 0 auto;
+
+}
+
+
  //doucument.querySelector(".parent-div").style 
  //document.querySelector(".parent-div").style.background = ""

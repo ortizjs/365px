@@ -3,13 +3,13 @@ import { Link } from 'react-router-dom';
 
 const PhotoIndexItem = props => (
     <div>
-        <ul>
+        {/* <ul> */}
             {/* {props.photo} */}
             {props.title}
-           <li>
+           {/* <li> */}
                 <img src={props.photo.photo_url} alt="" />
-            </li> 
-        </ul>
+            {/* </li>  */}
+        {/* </ul> */}
         {/* <Link to={`api/photos/${props.photo.id}`}>{props.post.title}</Link> */}
         {/* <Link to={`api/photos/${props.post.id}/edit`}>Edit {props.post.title}</Link> */}
         {/* <button onClick={props.editPhoto(props.photo.id)}>Edit</button> */}
