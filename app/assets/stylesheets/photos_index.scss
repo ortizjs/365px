@@ -18,8 +18,10 @@
 }
 
 .photos-index-div {
-    width: 50%;
     overflow: scroll;
+    display: flex;
+    width: 50%;
+    justify-content: center;
     // display: flex;
     // flex-direction: column;
 }

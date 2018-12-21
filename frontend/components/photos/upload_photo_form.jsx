@@ -13,15 +13,12 @@ export default class UploadForm extends React.Component {
     }
 
     handleInput(field) {
-        // this.setState({title: e.currentTarget.value});
-        // this.setState({photogrpaherId: e.currentTarget.value});
         return e => this.setState({
             [field]: e.currentTarget.value
         });
     }
 
     handleFile(e) {
-        // debugger
         this.setState({ photoFile: e.currentTarget.files[0]});
     }
 
@@ -41,7 +38,8 @@ export default class UploadForm extends React.Component {
                 <label htmlFor="photo-title"> Title of photo </label>
                 <input type="text"
                 id="photo-title"
-                value={this.state.title}
+                // value={this.state.title}
+
                 onChange={this.handleInput("title")}/>
                 {/* onChange={this.handleInput.bind(this)}/> */}
                 
