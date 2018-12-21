@@ -86,17 +86,20 @@ class Greeting extends React.Component {
         } else {
             return (
                 <nav className="greeting-nav">
-                    <div className="logo-image-div">
-                        <Link to={linkTo} className="image-logo-link">
-                            <img src={window.images.logo} alt="" />
-                        </Link>
-                        {/* <h2 className="discover-tag">Discover</h2> */}
-                    </div>
-                    <div className="discover-tag">
-                        <h2 className="discover-h2">Discover</h2>
-                    </div>
-                    <div className="dot-icon-display">
-                        {dotsIcon}
+                    
+                        <div className="logo-image-div">
+                            <Link to={linkTo} className="image-logo-link">
+                                <img src={window.images.logo} alt="" />
+                            </Link>
+                            {/* <h2 className="discover-tag">Discover</h2> */}
+                        </div>
+                    <div className="header-nav">
+                        <div className="discover-tag">
+                            <h2 className="discover-h2">Discover</h2>
+                        </div>
+                        <div className="dot-icon-display">
+                            {dotsIcon}
+                        </div>
                     </div>
                     <div className="result-div">
                         <div className="inner-result-div">
