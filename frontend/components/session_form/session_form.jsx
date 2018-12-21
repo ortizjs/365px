@@ -46,20 +46,13 @@ class SessionForm extends React.Component {
         if (this.props.formType === "login"){
         return (
             <div className="login-form-container">
-                {/* <div className="login-page-top-div"> */}
-                    {/* <GreetingContainer /> */}
-                    {/* <img src={window.images.logo} alt="" /> */}
-                    {/* <img className="main-logo" src="http://www.lovethispic.com/uploaded_images/spring_green_scenery.jpg" border="0" />    */}
-                {/* </div> */}
                 <form onSubmit={this.handleSubmit} className="login-form-box">
                     <div className="overall-form">
 
                         <h1 className="login-welcome">Log In to 365px</h1>
 
                         <div className="login-form">
-
                             <br />
-                            
                             <label className="login-username-label"> Username
                                 <input type="text"
                                     // placeholder="Username"
@@ -80,7 +73,7 @@ class SessionForm extends React.Component {
 
                             <br />
                             
-                            <input className="login-button" type="submit" value="Log In" />
+                            <input className="login-button" type="submit" value="Log In" /> 
                             <br />
                             <br />
                             <input className="guest-login-button" type="button" value="Log in as guest" 

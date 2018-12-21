@@ -74,6 +74,7 @@ class Greeting extends React.Component {
         let linkTo = this.props.currentUser ? "/users" : "/"
         let planeIcon = this.props.currentUser ? <i className="far fa-paper-plane"></i> : none;
         let bellIcon = this.props.currentUser ? <i className="far fa-bell"></i> : none;
+        let dotsIcon = this.props.currentUser ? <i className="fas fa-ellipsis-h"></i> : none;
 
 
         if (this.props.location.pathname === "/" && !this.props.currentUser) {
@@ -89,6 +90,13 @@ class Greeting extends React.Component {
                         <Link to={linkTo} className="image-logo-link">
                             <img src={window.images.logo} alt="" />
                         </Link>
+                        {/* <h2 className="discover-tag">Discover</h2> */}
+                    </div>
+                    <div className="discover-tag">
+                        <h2 className="discover-h2">Discover</h2>
+                    </div>
+                    <div className="dot-icon-display">
+                        {dotsIcon}
                     </div>
                     <div className="result-div">
                         <div className="inner-result-div">

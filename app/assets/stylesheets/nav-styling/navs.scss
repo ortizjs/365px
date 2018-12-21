@@ -15,14 +15,14 @@
 .logo-image-div {
     display: flex;
     justify-content: center;
-     align-items: center;
+    align-items: center;
     // padding-right: 700px; 
     // padding-bottom: 50px;
     // border: 1px solid red;
     width: 170px;
     height:100%;
-    
 }
+
 // .image-logo-link {
 //     border: 1px solid blue;
 //     margin-left: 50px;
@@ -33,6 +33,43 @@
 //     // padding-bottom: 50px;
 //     // padding-right: 50px;
 // }
+
+
+.discover-tag {
+    display: flex;
+    justify-content: flex-start;
+    // justify-content: center;
+    align-items: center;
+    width: 170px;
+    height:100%;
+    // font-size: 15px;
+    // font-weight: normal;
+    // color: #767879f0;
+    // text-rendering: optimizeLegibility;
+    // font-family: "Helvetica Neue", HelveticaNeue, Helvetica, TeXGyreHeros, FreeSans, "Nimbus Sans L", "Liberation Sans", Arial, sans-serif;
+    // margin-top: 30px;
+}
+
+.discover-h2 {
+    font-size: 13px;
+    font-family: "Helvetica Neue", HelveticaNeue, Helvetica, TeXGyreHeros, FreeSans, "Nimbus Sans L", "Liberation Sans", Arial, sans-serif;
+    font-weight: normal;
+    color: black;
+    // color: #71767a;
+    -webkit-font-smoothing: antialiased;
+}
+
+.dot-icon-display{
+    margin-top: 10px;
+    margin-left: 8px;
+    width: 25%;
+    // height: 300%;
+}
+
+.fa-ellipsis-h {
+    font-size: 25px;
+    font-weight: lighter;
+}
 
 .result-div {
     //result div is left div containing inner-result-div 

@@ -31,7 +31,7 @@ export default class UploadForm extends React.Component {
     render() {
         console.log(this.state);
         return (
-            <form onSubmit={this.handleSubmit}>
+            <form className="photo-upload-form" onSubmit={this.handleSubmit}>
                 <label htmlFor="photo-title"> Title of photo </label>
                 <input type="text"
                 id="photo-title"
@@ -45,7 +45,7 @@ export default class UploadForm extends React.Component {
                 id="photographer-id"
                 value={this.state.photographerId}
                 onChange={this.handleInput("photographerId")}/> */}
-
+                
                 <input type ="file" 
                     onChange={this.handleFile}/>
                 <button> Upload a new Photo!</button>
