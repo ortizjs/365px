@@ -71,7 +71,8 @@ import { Link } from 'react-router-dom';
         let logoutB = this.logoutButton();
         let userFirsName = this.props.currentUser ? this.props.currentUser.first_name : none;
         let linkTo = this.props.currentUser ? "/users" : "/"
-        let planeIcon;
+        let planeIcon = this.props.currentUser ? <i class="far fa-paper-plane"></i> : none;
+        let bellIcon = this.props.currentUser ? <i class="far fa-bell"></i> : none;
 
 
         if (this.props.location.pathname === "/" && !this.props.currentUser) {
@@ -90,12 +91,15 @@ import { Link } from 'react-router-dom';
                     <div className="result-div">
                         <div className="inner-result-div">
                             {result}
-                            <div className="plane-icon-display">
+                            <div className="first-name-display">
                                 {userFirsName}
                             </div>
-                            {/* <div className="-icon-display">
-                                {userFirsName}
-                            </div> */}
+                            <div className="plane-icon-display">
+                                {planeIcon}
+                            </div>
+                            <div className="bell-icon-display">
+                                {bellIcon}
+                            </div>
                             {logoutB}
                         </div>
                     </div>

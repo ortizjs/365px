@@ -64,6 +64,23 @@
     justify-content: center;
 }
 
+.plane-icon-display {
+    margin-left: 5px;
+}
+.bell-icon-display {
+    margin-left: 15px;
+}
+
+.fa-paper-plane {
+    margin-top: 8px;
+    font-size: 30px;
+}
+
+.fa-bell {
+    margin-top: 8px;
+    font-size: 30px;
+}
+
 .header-logout-button {
     text-align: center;
     font-size: 13px;
@@ -71,7 +88,7 @@
     font-weight: normal;
     color: #71767a;
     -webkit-font-smoothing: antialiased;
-    margin-left: 10px;
+    // margin-left: 10px;
     margin-top: 5px;
     border-radius: 5px;
     border: 1px solid white;
