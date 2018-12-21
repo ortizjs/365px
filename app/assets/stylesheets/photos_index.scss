@@ -3,17 +3,17 @@
     display: flex;
     margin: 0 auto;
     max-width: fit-content;
-    align-items: center;
     overflow: scroll;
+    align-items: center;
 }
 
 .photo-index-ul {
     height: 75%;
-    width: 100%;
+    width: 75%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    padding: 0px;
+    padding: none;
     overflow: scroll;
 }
 
