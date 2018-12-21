@@ -83,15 +83,13 @@ class SessionForm extends React.Component {
                             <input className="login-button" type="submit" value="Log In" />
                             <br />
                             <br />
-                            <input className="guest-login-button" type="submit" value="Log in as guest" 
-                            // onClick={() => this.props.processForm(guest)}/>
+                            <input className="guest-login-button" type="button" value="Log in as guest" 
                             onClick={() => this.props.processForm(guest).then(() => this.props.history.push("/users"))}/>
                             <div className="no-account-div">
                                 <h5 className="no-account-msg">Don't have an account? </h5>
                                 <Link to="/signup" className="no-account-signup-link">Sign Up</Link>
                             </div>
                             <div className="error-message">
-                                {/* Please {this.props.formType} or {this.props.navLink} */}
                                 <br />
                                 {this.renderErrors()}
                             </div>
