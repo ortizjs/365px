@@ -170,9 +170,9 @@ class SessionForm extends React.Component {
                             <div className="login-instead">
                                 Already have an account? 
                                 <Link to="/login" className="bottom-login">Log in</Link>
-                                <div className="signup-form-errors">
-                                    {this.renderErrors()}
-                                </div>
+                            </div>
+                            <div className="signup-form-errors">
+                                {this.renderErrors()}
                             </div>
                         </div>
                     </div>

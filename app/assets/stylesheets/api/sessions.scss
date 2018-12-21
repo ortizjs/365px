@@ -131,6 +131,18 @@
     width: 80%;
     color: white;
     margin-left: 35px;
+    cursor: pointer;
+ }
+
+ .error-message{
+   align-items: center;
+   text-align: center;
+   font-size: 20px;
+   font-weight: normal;
+   color: #767879f0;
+   text-rendering: optimizeLegibility;
+   font-family: "Helvetica Neue", HelveticaNeue, Helvetica, TeXGyreHeros, FreeSans, "Nimbus Sans L", "Liberation Sans", Arial, sans-serif;
+   margin-top: 5px;
  }
 
 
@@ -159,7 +171,7 @@
  }
 
  .signup-inner {
-    height: 700px;
+   //  height: 700px;
     width: 100%;
     // display: flex;
     justify-content: center;
@@ -214,14 +226,18 @@
 
  .bottom-terms-conatiner {
     width: 400px;
-    height: 100px;
-    display: block;
+   //  height: 100px;
+   //  display: block;
+    display: flex;
     align-items: center;
     background-color: white;
     border: 1px solid #ededee;
     border-radius: 3px;
     margin: 0 auto;
    //  margin-left: 525px;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px
  }
 
  .signup-input{
@@ -258,7 +274,7 @@
     text-rendering: optimizeLegibility;
     font-family: "Helvetica Neue", HelveticaNeue, Helvetica, TeXGyreHeros, FreeSans, "Nimbus Sans L", "Liberation Sans", Arial, sans-serif;
     margin-top: 30px;
-    margin-left: 70px;
+   //  margin-left: 70px;
  }
  .login-instead {
     font-size: 12px;
@@ -267,7 +283,16 @@
     text-rendering: optimizeLegibility;
     font-family: "Helvetica Neue", HelveticaNeue, Helvetica, TeXGyreHeros, FreeSans, "Nimbus Sans L", "Liberation Sans", Arial, sans-serif;
     margin-top: 5px;
-    margin-left: 110px;
+   //  margin-left: 110px;
+
+.signup-form-errors{
+   font-size: 12px;
+   font-weight: normal;
+   color: #767879f0;
+   text-rendering: optimizeLegibility;
+   font-family: "Helvetica Neue", HelveticaNeue, Helvetica, TeXGyreHeros, FreeSans, "Nimbus Sans L", "Liberation Sans", Arial, sans-serif;
+   margin-top: 5px;
+}
  }
  .bottom-login { 
     margin-left: 5px;

@@ -35,7 +35,7 @@ class PhotosIndex extends React.Component {
 
         return (
             <div>
-                <ul>
+                <ul className="photo-index-ul">
                    {photos}
                 </ul>
             </div>
