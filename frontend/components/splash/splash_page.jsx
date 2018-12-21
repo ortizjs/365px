@@ -7,7 +7,9 @@ const Splash = () => {
             <div className="header-section-div">
                 <nav className="static-nav">
                     <button className="splash-page-link-button">
-                        <Link to="/" className="splash-page-link"><img src={window.images.logo2} alt="" /></Link>
+                        <Link to="/" className="splash-page-link">
+                            <img className="splash-logo-image" src={window.images.logo2} alt="" />
+                        </Link>
                     </button>
                     <br />
                     <div className="splash-nav-log-sign-buttons">

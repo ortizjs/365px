@@ -1,8 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-// const Greeting = ({ currentUser, logout }) => {
-    class Greeting extends React.Component {
+class Greeting extends React.Component {
         
     sessionLinks () {
         if (this.props.location.pathname === "/login") {
@@ -25,7 +24,7 @@ import { Link } from 'react-router-dom';
             let none;
         } else if (this.props.location.pathname === "/" && this.props.currentUser) {
             return (
-                <div className="logo-image">
+                <div className="logo-image-div">
                     <img className="image-" src={window.images.logo} alt="" />
                 </div>
             );
@@ -45,12 +44,14 @@ import { Link } from 'react-router-dom';
     };
 
     userImage() {
+        let jimAvatar = window.images.avatar 
+        let otherAvatar = window.images.avatar2
+        let userAvatar = this.props.currentUser.first_name === "Jim" ? jimAvatar : otherAvatar
+        // debugger
         return(
             <div className="personal-image-div">
                 <div className="avatar">
-                    <img className="avatar-image" src={window.images.avatar} alt="" />
-                    {/* <h2 className="header-name">Hello, {this.props.currentUser.first_name}!</h2> */}
-                    {/* <button className="header-logout-button" onClick={this.props.logout}>Log Out</button> */}
+                    <img className="avatar-image" src={userAvatar} alt="" />
                 </div>
             </div>
         );
@@ -71,8 +72,8 @@ import { Link } from 'react-router-dom';
         let logoutB = this.logoutButton();
         let userFirsName = this.props.currentUser ? this.props.currentUser.first_name : none;
         let linkTo = this.props.currentUser ? "/users" : "/"
-        let planeIcon = this.props.currentUser ? <i class="far fa-paper-plane"></i> : none;
-        let bellIcon = this.props.currentUser ? <i class="far fa-bell"></i> : none;
+        let planeIcon = this.props.currentUser ? <i className="far fa-paper-plane"></i> : none;
+        let bellIcon = this.props.currentUser ? <i className="far fa-bell"></i> : none;
 
 
         if (this.props.location.pathname === "/" && !this.props.currentUser) {
@@ -84,9 +85,10 @@ import { Link } from 'react-router-dom';
         } else {
             return (
                 <nav className="greeting-nav">
-                    <div className="logo-image">
-                        <Link to={linkTo} className="image-"><img src={window.images.logo} alt="" /></Link>
-                        {/* <img className="image-" src={window.images.logo} alt="" /> */}
+                    <div className="logo-image-div">
+                        <Link to={linkTo} className="image-logo-link">
+                            <img src={window.images.logo} alt="" />
+                        </Link>
                     </div>
                     <div className="result-div">
                         <div className="inner-result-div">
