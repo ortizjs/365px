@@ -23,6 +23,7 @@
 }
 
 .result-div {
+    //result div is left div containing inner-result-div 
     display: flex; 
     justify-content: flex-end;
     // justify-content: space-between;
@@ -31,6 +32,7 @@
 }
 
 .inner-result-div {
+    // contains avatar and logout button
     display: flex; 
     justify-content: space-between;
 }
@@ -38,12 +40,28 @@
 .avatar {
     width: 40px;
     height: 100%;
+
 }
 .avatar-image {
-    // margin-top: 5px;
+    // display: flex;
+    // justify-content: center;
+    // align-content: center;
+    margin-top: 2px;
+    // width: 40px;
+    // height: 45px;
+    // margin-top: px;
+    width: 90%;
+    height: 90%;
+    border-radius: 35px;
+}
+
+.first-name-display {
+    display: flex;
+    text-align: center;
+    margin-top: 13px;
     width: 40px;
     height: 45px;
-    // border-radius: 5px;
+    justify-content: center;
 }
 
 .header-logout-button {
@@ -63,7 +81,9 @@
 
 
 
-  .nav-login-button {
+
+
+.nav-login-button {
     display: flex;
     justify-content: center;
     width: 83px;
@@ -75,7 +95,7 @@
     border: none;
     padding-top: 10px;
     padding-right: 20px;
- }
+}
 
 .nav-login-link {
      width: 150px;

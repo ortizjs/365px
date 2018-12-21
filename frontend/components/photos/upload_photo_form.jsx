@@ -7,9 +7,6 @@ export default class UploadForm extends React.Component {
         this.handleInput = this.handleInput.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
         this.handleFile = this.handleFile.bind(this);
-        // this.state = Object.assign({}, this.props.photo, {photoFile: null});
-        // this.state = this.props.photo;
-        // debugger
     }
 
     handleInput(field) {

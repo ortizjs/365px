@@ -23,11 +23,6 @@ import { Link } from 'react-router-dom';
             )
         } else if (this.props.location.pathname === "/" && !this.props.currentUser) {
             let none;
-            // return (
-            //     // none
-            //     // <div className="tranparent-div">
-            //     // </div>
-            // );
         } else if (this.props.location.pathname === "/" && this.props.currentUser) {
             return (
                 <div className="logo-image">
@@ -71,11 +66,13 @@ import { Link } from 'react-router-dom';
     
 
     render() {
-        // debugger
-            // let result = this.props.currentUser ? this.personalGreeting() : this.sessionLinks();
-            let result = this.props.currentUser ? this.userImage() : this.sessionLinks();
-            let logoutB = this.logoutButton();
-            let currentUserCheck;
+        let none;
+        let result = this.props.currentUser ? this.userImage() : this.sessionLinks();
+        let logoutB = this.logoutButton();
+        let userFirsName = this.props.currentUser ? this.props.currentUser.first_name : none;
+        let linkTo = this.props.currentUser ? "/users" : "/"
+        let planeIcon;
+
 
         if (this.props.location.pathname === "/" && !this.props.currentUser) {
             return (
@@ -87,12 +84,18 @@ import { Link } from 'react-router-dom';
             return (
                 <nav className="greeting-nav">
                     <div className="logo-image">
-                        <Link to="/" className="image-"><img src={window.images.logo} alt="" /></Link>
+                        <Link to={linkTo} className="image-"><img src={window.images.logo} alt="" /></Link>
                         {/* <img className="image-" src={window.images.logo} alt="" /> */}
                     </div>
                     <div className="result-div">
                         <div className="inner-result-div">
                             {result}
+                            <div className="plane-icon-display">
+                                {userFirsName}
+                            </div>
+                            {/* <div className="-icon-display">
+                                {userFirsName}
+                            </div> */}
                             {logoutB}
                         </div>
                     </div>
