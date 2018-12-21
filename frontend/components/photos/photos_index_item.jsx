@@ -2,14 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const PhotoIndexItem = props => (
-    <div>
-        {/* <ul> */}
-            {/* {props.photo} */}
+    <div className="photos-index-item-div">
             {props.title}
-           {/* <li> */}
-                <img src={props.photo.photo_url} alt="" />
-            {/* </li>  */}
-        {/* </ul> */}
+                <img src={props.photo.photo_url} alt="" />   
         {/* <Link to={`api/photos/${props.photo.id}`}>{props.post.title}</Link> */}
         {/* <Link to={`api/photos/${props.post.id}/edit`}>Edit {props.post.title}</Link> */}
         {/* <button onClick={props.editPhoto(props.photo.id)}>Edit</button> */}

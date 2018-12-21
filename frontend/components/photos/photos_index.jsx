@@ -20,7 +20,7 @@ class PhotosIndex extends React.Component {
         // debugger
         let photos = this.props.photos.map( photo => {
             return (
-                <ul>
+                <ul className="each-photo-ul">
                     {/* <li>{photo.title}</li> */}
                     {/* <img src={photo.photo_url} alt=""/> */}
                     <PhotoIndexItem
@@ -34,7 +34,7 @@ class PhotosIndex extends React.Component {
         });
 
         return (
-            <div>
+            <div className="photos-index-div">
                 <ul className="photo-index-ul">
                    {photos}
                 </ul>

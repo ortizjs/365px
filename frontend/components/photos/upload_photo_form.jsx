@@ -38,7 +38,7 @@ export default class UploadForm extends React.Component {
         console.log(this.state);
         return (
             <form onSubmit={this.handleSubmit}>
-                <label htmlFor="photo-title"> Title of photo</label>
+                <label htmlFor="photo-title"> Title of photo </label>
                 <input type="text"
                 id="photo-title"
                 value={this.state.title}
