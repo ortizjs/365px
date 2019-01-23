@@ -15,7 +15,7 @@ const PhotosReducer = (oldState = {}, action) => {
             delete newState[action.id];
             return newState;
         default:
-        return oldState;
+            return oldState;
     }
 };
 

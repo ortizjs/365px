@@ -29,6 +29,7 @@ class PhotosIndex extends React.Component {
                             title={photo.title}
                             photo={photo}
                             photo_url={photo.photo_url}
+                            deletePhoto={this.props.deletePhoto}
                         />
                     </ul>
                 

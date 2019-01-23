@@ -6,7 +6,6 @@ import { createPhoto } from '../../actions/photo_actions';
 const mSTP = (state, ownProps) => {
     // let currentUserId = state.entities.users[1].id;
     let currentUserId = state.session.id;
-    // debugger
     let photo = {
         title: "",
         photographerId: currentUserId,
