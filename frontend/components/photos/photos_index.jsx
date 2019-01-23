@@ -20,19 +20,17 @@ class PhotosIndex extends React.Component {
         // debugger
         let photos = this.props.photos.map( photo => {
             return (
-                
-                    <ul className="each-photo-ul">
-                        {/* <li>{photo.title}</li> */}
-                        {/* <img src={photo.photo_url} alt=""/> */}
-                        <PhotoIndexItem
-                            key={photo.id}
-                            title={photo.title}
-                            photo={photo}
-                            photo_url={photo.photo_url}
-                            deletePhoto={this.props.deletePhoto}
-                        />
-                    </ul>
-                
+                <ul className="each-photo-ul">
+                    {/* <li>{photo.title}</li> */}
+                    {/* <img src={photo.photo_url} alt=""/> */}
+                    <PhotoIndexItem
+                        key={photo.id}
+                        title={photo.title}
+                        photo={photo}
+                        photo_url={photo.photo_url}
+                        deletePhoto={this.props.deletePhoto}
+                    />
+                </ul>
             );
         });
 
