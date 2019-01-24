@@ -43,7 +43,7 @@ const PhotoIndexItem = props => {
         {/* <Link to={`api/photos/${props.photo.id}`}>{props.post.title}</Link> */}
         {/* <Link to={`api/photos/${props.post.id}/edit`}>Edit {props.post.title}</Link> */}
         {/* <button onClick={props.editPhoto(props.photo.id)}>Edit</button> */}
-        <button onClick={() => props.deletePhoto(props.photo.id).then(() => props.history.push('/users'))}>Delete</button>
+        <button onClick={() => props.deletePhoto(props.photo.id).then(() => props.history.go(0))}>Delete</button>
     </div>
 )};
 
