@@ -73,7 +73,9 @@ class SessionForm extends React.Component {
 
                             <br />
                             
-                            <input className="login-button" type="submit" value="Log In" /> 
+                            {/* <input className="login-button" type="submit" value="Log In" />  */}
+                            <input className="login-button" type="submit" value="Log In" 
+                                onClick={() => this.props.processForm(this.state).then(() => this.props.history.push("/users"))}/> 
                             <br />
                             <br />
                             <input className="guest-login-button" type="button" value="Log in as guest" 
