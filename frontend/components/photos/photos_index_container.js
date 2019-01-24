@@ -5,9 +5,11 @@ import { fetchPhotos, deletePhoto, updatePhoto } from '../../actions/photo_actio
 // import { updatePhoto } from '../../util/photo_api_util';
 
 const mSTP = ( state, ownProps ) => {
+    // debugger
     let photos = Object.values(state.entities.photos);
     return ({
-        photos: photos
+        photos: photos,
+        user_id: state.session.id
     });
 };
 
