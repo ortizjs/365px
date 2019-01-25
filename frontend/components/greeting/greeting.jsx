@@ -47,15 +47,16 @@ class Greeting extends React.Component {
         let jimAvatar = window.images.avatar 
         let otherAvatar = window.images.avatar2
         let userAvatar = this.props.currentUser.first_name === "Jim" ? jimAvatar : otherAvatar
+        let userId = this.props.user_id
         // debugger
         return(
             <div className="personal-image-div">
-                {/* <Link to={linkTo} className="image-logo-link">
-                    <img src={window.images.logo} alt="" />
-                </Link> */}
-                <div className="avatar">
+                <Link to={`/users/${userId}`} className="avatar">
                     <img className="avatar-image" src={userAvatar} alt="" />
-                </div>
+                </Link>
+                {/* <div className="avatar">
+                    <img className="avatar-image" src={userAvatar} alt="" />
+                </div> */}
             </div>
         );
     }

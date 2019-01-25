@@ -5,6 +5,7 @@ import {withRouter} from 'react-router-dom';
 
 const mapStateToProps = (state, ownProps) => {
     return ({
+        user_id: state.session.id,
         currentUser: state.entities.users[state.session.id]
     });
 };
