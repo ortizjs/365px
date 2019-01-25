@@ -11,7 +11,7 @@ class UserPhotos extends React.Component {
     render() {
         let user_id = this.props.user_id;
         // debugger
-        let photos = this.props.photos.map(photo => {
+        let UserPhotos = this.props.photos.map(photo => {
             // debugger
             if (photo.photographer_id === user_id) {
                 return (
@@ -41,7 +41,7 @@ class UserPhotos extends React.Component {
                 <div className="photos-index-div">
 
                     <ul className="photo-index-ul">
-                        {photos}
+                        {UserPhotos}
                     </ul>
                 </div>
             </div>
