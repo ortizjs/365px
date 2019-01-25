@@ -5,7 +5,7 @@ const Splash = () => {
     return(
         <div className="splash-page-main-div">
             <div className="header-section-div">
-                <nav className="static-nav">
+                <div className="static-nav">
                     <button className="splash-page-link-button">
                         <Link to="/" className="splash-page-link">
                             <img className="splash-logo-image" src={window.images.logo2} alt="" />
@@ -21,7 +21,7 @@ const Splash = () => {
                             <Link to="/signup" className="splash-page-signup-link">Sign Up</Link>
                         </button>
                     </div>
-                </nav>
+                </div>
 
                 <div className="main-content">
                     <div className="content">
@@ -40,9 +40,16 @@ const Splash = () => {
                         </div>
                     </div>
                 </div>
-
-                
             </div>
+            <footer className="footer-container">
+                {/* <div className="footer-div"> */}
+                    <p>
+                        365px is a clone of the original 500px photography website. Users can upload their photos
+                        <br /> and look at other photos uploaded by other users as their
+                        <br/> Created by: Jonnatan Ortiz
+                    <br />Contact information: jonnatano94@gmail.com.</p>
+                {/* </div> */}
+            </footer>
         </div>
     )
 }

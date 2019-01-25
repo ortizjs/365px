@@ -11,8 +11,6 @@ import UploadPhotoFormContainer from './photos/upload_photo_form_container';
 const App = () => (
     <div className="parent-div">
             <Switch>
-            {/* <AuthRoute exact path={"/login" || "/signup"} component={GreetingContainer} /> */}
-                {/* <AuthRoute exact path="/signup" component={GreetingContainer} /> */}
                 <Route path="/" component={GreetingContainer} />
             </Switch>
             <div className="app-photos-div">
@@ -23,6 +21,5 @@ const App = () => (
             <AuthRoute exact path="/login" component={LogInFormContainer} />
             <AuthRoute exact path="/signup" component={SignUpFormContainer} />
     </div>
-
 );
 export default App;

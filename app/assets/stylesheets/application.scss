@@ -51,7 +51,12 @@ h1, h2, p, strong, em, a {
 .parent-div {
   display: flex;
   flex-direction: column;
-  // height: 100%;
+  // background-image: url('https://www.wallpaperup.com/uploads/wallpapers/2013/03/06/48505/669565cbcba6f46c2b88c5cd88433288.jpg');
+  // background-repeat: no-repeat;
+  // background-position: center;
+  // background-size: cover;
+  height: 100%;
+  width:100%;
 }
 
 .app-photos-div {
