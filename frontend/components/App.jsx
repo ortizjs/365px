@@ -15,6 +15,7 @@ const App = () => (
             </Switch>
             <div className="app-photos-div">
                 <ProtectedRoute path="/users" component={PhotoIndexContainer} />
+                {/* <ProtectedRoute path="/users/" component={PhotoIndexContainer} /> */}
                 <ProtectedRoute path="/users" component={UploadPhotoFormContainer} />
             </div>
             <AuthRoute exact path="/" component={SplashContainer} />

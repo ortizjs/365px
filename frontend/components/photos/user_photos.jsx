@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
 import PhotoIndexItem from './photos_index_item';
 
-class UserPhotosIndex extends React.Component {
+class UserPhotos extends React.Component {
 
     componentDidMount() {
         this.props.fetchPosts();    
@@ -49,4 +49,4 @@ class UserPhotosIndex extends React.Component {
     }
 }
 
-export default PhotosIndex;
+export default UserPhotos;
