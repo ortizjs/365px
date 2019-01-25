@@ -5,10 +5,14 @@ import { fetchPhotos, deletePhoto } from '../../actions/photo_actions';
 
 const mSTP = (state, ownProps) => {
     // debugger
-    let photos = Object.values(state.entities.photos);
+    // let user_id = ownProps.match.params.id;
+    // debugger
+    let photos = Object.values(state.entities.photos).filter( pics => pics.photographer_id == ownProps.match.params.id);
+    // debugger
     return ({
         photos: photos,
-        user_id: state.session.id
+        user_id: ownProps.match.params.id
+        // user_id: state.session.id
     });
 };
 

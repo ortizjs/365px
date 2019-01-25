@@ -17,11 +17,11 @@ class PhotosIndex extends React.Component {
     }
 
     render() {
-        let user_id = this.props.user_id;
+        // let user_id = this.props.user_id;
         // debugger
         let photos = this.props.photos.map( photo => {
             // debugger
-            if (photo.photographer_id === user_id){
+            // if (photo.photographer_id === user_id){
             return (
                     <ul className="each-photo-ul">
                         {/* <li>{photo.title}</li> */}
@@ -35,7 +35,7 @@ class PhotosIndex extends React.Component {
                         />
                   </ul>
                 );
-            }
+            // }
         });
 
         return (

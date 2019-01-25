@@ -11,11 +11,11 @@ class UserPhotos extends React.Component {
     render() {
         let user_id = this.props.user_id;
         // debugger
-        let photos = this.props.photos.map(photo => {
+        let photos = this.props.photos.reverse().map(photo => {
             // debugger
-            if (photo.photographer_id === user_id) {
+            // if (photo.photographer_id === user_id) {
                 return (
-                    // <div className="user-photos-container-div">
+                    <div className="user-photos-container-div">
                         <ul className="each-photo-ul">
                             {/* <li>{photo.title}</li> */}
                             {/* <img src={photo.photo_url} alt=""/> */}
@@ -27,9 +27,9 @@ class UserPhotos extends React.Component {
                                 deletePhoto={this.props.deletePhoto}
                             />
                         </ul>
-                    // </div>
+                    </div>
                 );
-            }
+            // }
         });
 
         return (
