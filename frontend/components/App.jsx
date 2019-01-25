@@ -19,7 +19,7 @@ const App = () => (
             <div className="app-photos-div">
                 <ProtectedRoute exact path="/users" component={PhotoIndexContainer} />
                 <ProtectedRoute exact path="/users/:id" component={UserPhotosContainer} />
-                <ProtectedRoute path="/users" component={UploadPhotoFormContainer} />
+                <ProtectedRoute exact path="/users/:id" component={UploadPhotoFormContainer} />
             </div>
             <AuthRoute exact path="/" component={SplashContainer} />
             <AuthRoute exact path="/login" component={LogInFormContainer} />
