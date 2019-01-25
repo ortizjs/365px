@@ -7,8 +7,10 @@ import LogInFormContainer from './session_form/login_form_container';
 import { AuthRoute, ProtectedRoute } from '../util/route_util';
 import SplashContainer from './splash/splash_page';
 import PhotoIndexContainer from './photos/photos_index_container';
-import UserPhotosContainer from './photos/photos_index_container';
+import UserPhotosContainer from './photos/user_photos_container';
 import UploadPhotoFormContainer from './photos/upload_photo_form_container';
+
+
 const App = () => (
     <div className="parent-div">
             <Switch>

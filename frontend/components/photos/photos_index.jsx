@@ -41,13 +41,12 @@ class PhotosIndex extends React.Component {
         return (
             <div className="main-index-content">
                 <div className="sub-header">
-                    <h1>Recommended photos</h1>
+                    <h1>Recommended photos!!</h1>
                     <h2>Based on your activity</h2>
                 </div>
                 <div className="photos-index-div">
-                    
                     <ul className="photo-index-ul">
-                    {photos}
+                        {photos}
                     </ul>
                 </div>
             </div>

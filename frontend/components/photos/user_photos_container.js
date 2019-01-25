@@ -1,11 +1,11 @@
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 import UserPhotos from './user_photos';
-import { fetchPhotos } from '../../actions/session_actions';
+import { fetchPhotos, deletePhoto } from '../../actions/photo_actions';
 
-
-const mSTP = ( state, ownProps) => {
-    let photos = Object.values(staete.entities.photos);
+const mSTP = (state, ownProps) => {
+    // debugger
+    let photos = Object.values(state.entities.photos);
     return ({
         photos: photos,
         user_id: state.session.id

@@ -15,9 +15,9 @@ const mSTP = ( state, ownProps ) => {
 
 const mDTP = (dispatch) => {
     return ({
-        fetchPhotos: () => dispatch(fetchPhotos()),
+        fetchPhotos: () => dispatch(fetchPhotos())
         // editPhoto: (photo) => dispatch(updatePhoto(photo)),
-        deletePhoto: photoId => dispatch(deletePhoto(photoId))
+        // deletePhoto: photoId => dispatch(deletePhoto(photoId))
     });
 };
 
