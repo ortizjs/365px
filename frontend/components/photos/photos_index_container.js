@@ -7,7 +7,9 @@ import { fetchPhotos, deletePhoto, updatePhoto } from '../../actions/photo_actio
 const mSTP = ( state, ownProps ) => {
     // debugger
     let photos = Object.values(state.entities.photos);
+    // let userName = Object.values(state.entities.users)[0].user_name;
     return ({
+        // userName: userName,
         photos: photos,
         user_id: state.session.id
     });

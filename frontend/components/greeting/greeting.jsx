@@ -50,6 +50,9 @@ class Greeting extends React.Component {
         // debugger
         return(
             <div className="personal-image-div">
+                {/* <Link to={linkTo} className="image-logo-link">
+                    <img src={window.images.logo} alt="" />
+                </Link> */}
                 <div className="avatar">
                     <img className="avatar-image" src={userAvatar} alt="" />
                 </div>
