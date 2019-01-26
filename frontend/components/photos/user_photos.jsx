@@ -36,27 +36,6 @@ class UserPhotos extends React.Component {
     }
 
     render() {
-        // let user_id = this.props.user_id;
-        // let photos = this.props.photos.reverse().map(photo => {
-            // if (photo.photographer_id === user_id) {
-                // return (
-                    // <div className="user-photos-container-div">
-                        {/* // <ul className="each-photo-ul"> */}
-                            {/* <li>{photo.title}</li> */}
-                            {/* <img src={photo.photo_url} alt=""/> */}
-                            {/* <PhotoIndexItem
-                                key={photo.id}
-                                title={photo.title}
-                                photo={photo}
-                                photo_url={photo.photo_url}
-                                deletePhoto={this.props.deletePhoto}
-                            /> */}
-                        {/* </ul> */}
-                    {/* </div> */}
-                // );
-            // }
-        // });
-
         return (
             <div className="main-index-content">
                 <div className="sub-header">

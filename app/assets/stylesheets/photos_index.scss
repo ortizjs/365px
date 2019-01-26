@@ -35,13 +35,18 @@
     flex-direction: column;
     margin-bottom: 50px;
     width: 400px;
-    border: 1px solid gray;
+    // border: 1px solid gray;
     align-items: center;
     padding-bottom:30px;
 }
-.photos-index-item-div img{
-    height: 300px;
-    width: 300px;
+
+.photos-index-item-div img {
+    transition: height 0.3s, width 0.3s linear;
+}
+
+.photos-index-item-div img:hover{
+    height: 450px;
+    width: 550px;
 }
 
 .each-photo-ul {
