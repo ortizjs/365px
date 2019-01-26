@@ -51,9 +51,15 @@ class Greeting extends React.Component {
         // debugger
         return(
             <div className="personal-image-div">
-                <Link to={`/users/${userId}`} className="avatar">
+                {/* <Link to={`/users/${userId}`} className="avatar">
                     <img className="avatar-image" src={userAvatar} alt="" />
-                </Link>
+                </Link> */}
+
+                <div className="avatar">
+                    <Link to={`/users/${userId}`}>
+                        <img className="avatar-image" src={userAvatar} alt="" />
+                    </Link>
+                </div>
                 {/* <div className="avatar">
                     <img className="avatar-image" src={userAvatar} alt="" />
                 </div> */}

@@ -12,8 +12,6 @@ const mSTP = (state, ownProps) => {
     return ({
         photos: photos,
         user_id: user_id
-        // user_id: Object.values(state.entities.users)[0].id
-        // user_id: state.session.id
     });
 };
 

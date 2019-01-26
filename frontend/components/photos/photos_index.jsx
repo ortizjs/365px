@@ -9,7 +9,7 @@ class PhotosIndex extends React.Component {
 
     render() {
         // debugger
-        let photos = this.props.photos.map((photo, i) => {
+        let photos = this.props.photos.reverse().map((photo, i) => {
             // if (photo.photographer_id === user_id){
             return (
                     <ul key={i} className="each-photo-ul">
