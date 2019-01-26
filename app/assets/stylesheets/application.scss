@@ -64,8 +64,21 @@ h1, h2, p, strong, em, a {
   flex-direction: column;
   // max-width: 960px;
   margin: 0 auto;
+  background-color: #e2e8ed;
+  width: 100%;
+  overflow: scroll;
 
 }
+
+// .app-photos-div{
+//     background-color: #e2e8ed;
+//     display: flex;
+//     margin: 0 auto;
+//     max-width: fit-content;
+//     overflow: scroll;
+//     align-items: center;
+//     width: 100%;
+// }
 
 
  //doucument.querySelector(".parent-div").style 

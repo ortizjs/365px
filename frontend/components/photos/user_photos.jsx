@@ -14,22 +14,21 @@ class UserPhotos extends React.Component {
            let deletePhoto = this.props.deletePhoto;
            let that = this;
            let delet = "";
-           console.log(parseInt(user_id), photo.photographer_id);
             if (photo.photographer_id === parseInt(user_id)) {
                delet = <button onClick={() => deletePhoto(photo.id).then(() => that.props.history.go(0))}> Delete </button>
            }
            return (
-               <div key={i} className="user-photos-container-div">
-                   <ul className="each-photo-ul">
-                        <div className = "photos-index-item-div" >
-                            <div className="photo-title">
-                                {photo.title}
-                            </div>
-                            <img src={photo.photo_url} width="100px" height="100px" alt="" />
-                            {delet}
-                            </div >
-                   </ul>
-               </div>
+            //    <div key={i} className="user-photos-container-div">
+             <ul className="each-photo-ul"> 
+                <div className="photos-index-item-div" >
+                    <div className="photo-title">
+                        {photo.title}
+                    </div>
+                    <img src={photo.photo_url} width="100px" height="100px" alt="" />
+                    {delet}
+                </div >
+            </ul>
+               /* </div> */
            )
         });
         return photos
@@ -43,9 +42,7 @@ class UserPhotos extends React.Component {
                     <h2>Most recent to least. Be proud of your work!</h2>
                 </div>
                 <div className="photos-index-div">
-
                     <ul className="photo-index-ul">
-                        {/* {photos} */}
                         {this.showUserPhotos.bind(this)()}
                     </ul>
                 </div>
