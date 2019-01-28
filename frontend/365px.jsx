@@ -42,3 +42,4 @@ document.addEventListener("DOMContentLoaded", () => {
 //     photographer_id: 14,
 //     photo_url: "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--277c6270d219edebacdf72e9b0a8e48a472f15e3/el-salvador777-.jpg)--)"
 // };
+
