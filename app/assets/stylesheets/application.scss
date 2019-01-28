@@ -67,8 +67,16 @@ h1, h2, p, strong, em, a {
   background-color: #e2e8ed;
   width: 100%;
   overflow: scroll;
-
+  // justify-content: center;
+  // align-content: center;
+  // justify-items: center;
 }
+
+.photo-upload-form-div {
+  display: inline-block;
+  justify-content: center;
+}
+
 
 // .app-photos-div{
 //     background-color: #e2e8ed;

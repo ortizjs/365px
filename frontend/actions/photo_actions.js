@@ -18,10 +18,6 @@ export const removePhoto = (photoId) => ({
     type: REMOVE_PHOTO,
     id: photoId
 });
-// export const removePhoto = (photo) => ({
-//     type: REMOVE_PHOTO,
-//     id: photo.id
-// });
 
 export const fetchPhotos = () => dispatch => (
     PhotoAPIUtil.fetchPhotos().then(photos => dispatch(receivePhotos(photos)))
