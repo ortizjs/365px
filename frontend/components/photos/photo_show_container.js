@@ -8,8 +8,10 @@ const mSTP = (state, ownProps ) => {
     let photo_id = ownProps.match.params.photoId;
     let photogrpher_id = ownProps.match.params.photographer_id;
     // let photogrpher_id = state.session.photos[photo];
-    let photo = state.entities.photos[user_id];
-    
+    // let photo = state.entities.photos[photo_id];
+    let photo = state.entities.photos;
+    console.log(photo);
+
     return ({
         photo_id,
         photogrpher_id,

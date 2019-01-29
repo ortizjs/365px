@@ -6,8 +6,9 @@ class PhotoShow extends React.Component {
         let photoId = this.props.match.params.photoId;
         this.props.fetchPhoto(photoId);
     }
-
+    
     render() {
+        // console.log(this.props.photos);
         if (this.props.photo === undefined) {
             return (
                 <div>
@@ -31,7 +32,9 @@ class PhotoShow extends React.Component {
                             </h3>
                         </div>
                         <div className="show-return-button">
-                            <Link to="/users">Go Back</Link>
+                            <button onClick={() => this.props.history.push("/users")}> Go back </button>
+                            {/* <button onClick={() => deletePhoto(photo.id).then(() => that.props.history.go(0))}> Delete </button> */}
+                            {/* <Link to="/users">Go Back</Link> */}
                         </div>
                     </div>    
                 </div>
