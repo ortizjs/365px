@@ -19,7 +19,7 @@ class PhotoShow extends React.Component {
                 <div className="photo-show-main-div">
                     <div className="photo-show-content">
                         <div className="image-div">
-                            <img src={this.props.photo.photo_url} alt="" />
+                            <img className="photo-show-image" src={this.props.photo.photo_url} alt="" />
                         </div>
                         <div className="show-page-photo-title">
                             <h2>
