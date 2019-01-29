@@ -30,7 +30,9 @@ class PhotoShow extends React.Component {
                                 By: 
                             </h3>
                         </div>
-
+                        <div className="show-return-button">
+                            <Link to="/users">Go Back</Link>
+                        </div>
                     </div>    
                 </div>
             )
