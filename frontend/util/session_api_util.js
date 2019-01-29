@@ -8,11 +8,20 @@ export const login = (user) => {
     );
 };
 
+export const fetchUser = (id) => {
+    return (
+        $.ajax({
+            method: "GET",
+            url: `api/session/${id}`
+        })
+    );
+};
+
 export const signup = (user) => {
     return (
         $.ajax({
             method: "POST",
-            url: "api/user",
+            url: "api/users",
             data: { user }
         })
     );

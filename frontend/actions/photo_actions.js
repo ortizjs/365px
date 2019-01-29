@@ -13,6 +13,10 @@ export const receivePhoto = (photo) => ({
     type: RECEIVE_PHOTO,
     photo: photo
 });
+export const receiveUser = (user) => ({
+    type: RECEIVE_USER,
+    user: user
+});
 
 export const removePhoto = (photoId) => ({
     type: REMOVE_PHOTO,
@@ -22,9 +26,12 @@ export const removePhoto = (photoId) => ({
 export const fetchPhotos = () => dispatch => (
     PhotoAPIUtil.fetchPhotos().then(photos => dispatch(receivePhotos(photos)))
 );
+export const fetchUser = (id) => dispatch => (
+    PhotoAPIUtil.fetchUser(id).then(user => dispatch(receiveUser(user)))
+);
 
 export const fetchPhoto = (id) => dispatch => (
-    PhotoAPIUtil.fetchPhoto(id).then(id => dispatch(receivePhotos(id)))
+    PhotoAPIUtil.fetchPhoto(id).then(id => dispatch(receivePhoto(id)))
 );
 
 export const createPhoto = (photo) => dispatch => (
