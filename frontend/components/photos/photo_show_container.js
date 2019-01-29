@@ -2,18 +2,18 @@ import { connect } from 'react-redux';
 import { fetchPhoto } from '../../actions/photo_actions';
 import PhotoShow from './photo_show';
 
-const mapStateToProps = (state, { match }) => {
-    const benchId = parseInt(match.params.benchId);
-    const bench = selectBench(state.entities, benchId);
-    const reviews = selectReviewsForBench(state.entities, bench);
+const mSTP = (state, ownProps ) => {
+    // const photoId = parseInt(match.params.photoId);
+    // const photo = selectBench(state.entities, photoId);
+    const photo = selectBench(state.entities, photoId);
     return {
-        benchId,
-        bench,
+        // photoId,
+        photo
     };
 };
 
-const mapDispatchToProps = dispatch => ({
-    fetchBench: id => dispatch(fetchBench(id))
+const mDTP = dispatch => ({
+    fetchPhoto: id => dispatch(fetchPhoto(id))
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(BenchShow);
+export default connect(mSTP, mDTP)(PhotoShow);
