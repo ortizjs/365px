@@ -5,8 +5,8 @@ import { fetchPhotos, deletePhoto } from '../../actions/photo_actions';
 
 const mSTP = (state, ownProps) => {
     // let user_id = ownProps.match.params.id; //(this lets user delete photos that do not belong to that user, dont use)
-    let photos = Object.values(state.entities.photos).filter( pics => pics.photographer_id == ownProps.match.params.id);
-    let user_id = Object.values(state.entities.users)[state.session.id]
+    let photo = Object.values(state.entities.photos).filter( pics => pics.photographer_id == ownProps.match.params.id);
+    let user_id = Object.values(state.entities.users)[state.session.id];
     return ({
         photos: photos,
         user_id: user_id

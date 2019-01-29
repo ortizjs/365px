@@ -2,12 +2,12 @@ import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 import PhotosIndex from './photos_index';
 import { fetchPhotos, deletePhoto, updatePhoto } from '../../actions/photo_actions';
-// import { updatePhoto } from '../../util/photo_api_util';
 
 const mSTP = ( state, ownProps ) => {
-    // debugger
     let photos = Object.values(state.entities.photos);
     // let userName = Object.values(state.entities.users)[0].user_name;
+    // console.log("These are the photos and their ID's: ", photos.forEach(photo => console.log(photo.id)));
+    // debugger
     return ({
         // userName: userName,
         photos: photos,
