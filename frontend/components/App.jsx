@@ -9,6 +9,7 @@ import SplashContainer from './splash/splash_page';
 import PhotoIndexContainer from './photos/photos_index_container';
 import UserPhotosContainer from './photos/user_photos_container';
 import UploadPhotoFormContainer from './photos/upload_photo_form_container';
+import PhotoShowContainer from './photos/photo_show_container';
 
 
 const App = () => (
@@ -22,6 +23,7 @@ const App = () => (
                 <div className="photo-upload-form-div">
                     <ProtectedRoute exact path="/users/:id" component={UploadPhotoFormContainer} />
                 </div>
+                <ProtectedRoute path ="/photos/:photoId" component={PhotoShowContainer} />
             </div>
             <AuthRoute exact path="/" component={SplashContainer} />
             <AuthRoute exact path="/login" component={LogInFormContainer} />

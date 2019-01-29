@@ -18,11 +18,19 @@ class PhotoShow extends React.Component {
                 <div className="photo-show-main-div">
                     <div className="photo-show-content">
                         <div className="image-div">
-                            <img src={props.photo.photo_url} alt="" />
+                            <img src={this.props.photo.photo_url} alt="" />
                         </div>
                         <div className="show-page-photo-title">
-                            {this.props.photo.title}
+                            <h2>
+                                {this.props.photo.title}
+                            </h2>
                         </div>
+                        <div className="photo-by-div">
+                            <h3>
+                                By: 
+                            </h3>
+                        </div>
+
                     </div>    
                 </div>
             )
