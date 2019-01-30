@@ -97,19 +97,15 @@ class Greeting extends React.Component {
                             <Link to={linkTo} className="image-logo-link">
                                 <img src={window.images.logo} alt="" />
                             </Link>
-                            {/* <h2 className="discover-tag">Discover</h2> */}
                         </div>
                     <div className="header-nav">
                         <div className="discover-tag">
                             <a className="githubtaglink" href="https://github.com/ortizjs/365px">
                                 <h2 className="discover-h2">Discover</h2>
                             </a>
-                            {/* <Link to="https://github.com/ortizjs/365px">
-                                <h2 className="discover-h2">Discover</h2>
-                            </Link> */}
                         </div>
                         <div className="dot-icon-display">
-                            <a classname="dot-icon-display-link" href="https://www.linkedin.com/in/jonnatan-ortiz/" value="LinkedIn">
+                            <a href="https://www.linkedin.com/in/jonnatan-ortiz/" value="LinkedIn">
                                 {dotsIcon}
                             </a>
                         </div>
