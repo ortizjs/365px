@@ -51,10 +51,6 @@ class Greeting extends React.Component {
         // debugger
         return(
             <div className="personal-image-div">
-                {/* <Link to={`/users/${userId}`} className="avatar">
-                    <img className="avatar-image" src={userAvatar} alt="" />
-                </Link> */}
-
                 <div className="avatar">
                     <Link to={`/users/${userId}`}>
                         <img className="avatar-image" src={userAvatar} alt="" />
@@ -105,10 +101,17 @@ class Greeting extends React.Component {
                         </div>
                     <div className="header-nav">
                         <div className="discover-tag">
-                            <h2 className="discover-h2">Discover</h2>
+                            <a className="githubtaglink" href="https://github.com/ortizjs/365px">
+                                <h2 className="discover-h2">Discover</h2>
+                            </a>
+                            {/* <Link to="https://github.com/ortizjs/365px">
+                                <h2 className="discover-h2">Discover</h2>
+                            </Link> */}
                         </div>
                         <div className="dot-icon-display">
-                            {dotsIcon}
+                            <a classname="dot-icon-display-link" href="https://www.linkedin.com/in/jonnatan-ortiz/" value="LinkedIn">
+                                {dotsIcon}
+                            </a>
                         </div>
                     </div>
                     <div className="result-div">

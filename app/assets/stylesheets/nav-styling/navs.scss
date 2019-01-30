@@ -55,12 +55,18 @@
     align-items: center;
     width: 170px;
     height:100%;
+    font-display: bold;
+    // text-decoration: none;
     // font-size: 15px;
     // font-weight: normal;
     // color: #767879f0;
     // text-rendering: optimizeLegibility;
     // font-family: "Helvetica Neue", HelveticaNeue, Helvetica, TeXGyreHeros, FreeSans, "Nimbus Sans L", "Liberation Sans", Arial, sans-serif;
     // margin-top: 30px;
+}
+
+.githubtaglink{
+    text-decoration: none;
 }
 
 .discover-h2 {
@@ -80,7 +86,10 @@
     // margin-right: 50%;
 
 }
-
+.dot-icon-display-link {
+    text-decoration: none;
+    color: black
+}
 .fa-ellipsis-h {
     font-size: 25px;
     font-weight: lighter;

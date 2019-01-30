@@ -20,13 +20,15 @@ class UserPhotos extends React.Component {
            }
            return (
             //    <div key={i} className="user-photos-container-div">
-             <ul className="each-photo-ul"> 
+             <ul key={i} className="each-photo-ul"> 
                 <div className="photos-index-item-div" >
                     <div className="photo-title">
                         {photo.title}
                     </div>
-                    <img src={photo.photo_url} width="100px" height="100px" alt="" />
-                    {delet}
+                       <Link to={`/photos/${photo.id}`}>
+                            <img src={photo.photo_url} width="100px" height="100px" alt="" />
+                       </Link>
+                        {delet}
                 </div >
             </ul>
                /* </div> */

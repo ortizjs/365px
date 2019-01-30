@@ -10,7 +10,7 @@ const mSTP = (state, ownProps ) => {
     console.log(photo)
     // let photographer_username = state.entities.photos[photo_id].username;
     // console.log(photographer_username);
-    debugger
+    // debugger
     return ({
         photo_id,
         photographer_id,

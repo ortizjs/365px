@@ -1,24 +1,33 @@
 .photo-show-main-div {
     align-items: center;
-    background-color: black;
-    height: 100%;
+    background-color: #222;
+    // background-color: black;
+    height: 100%; 
+    width: 100%;
 }
 
 .photo-show-content {
     height: 60%;
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
-    margin-top: 30px;
+    // margin-top: 30px;
+    // margin-bottom: 30px;
 }
 
-// .photo-show-image {
-// }
+.image-div {
+    width: 55%;
+    height: 60%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
 
-.show-page-photo-title {
-    color: white;
+.show-page-photo-info {
+    width: 100%;
+    background-color: white;
+    color: black;
 }
 .photo-by-div{
     color: white;
