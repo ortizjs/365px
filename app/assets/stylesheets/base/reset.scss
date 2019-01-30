@@ -5,10 +5,13 @@
 // span, article, footer, time, small 
 
 // html, body, h1, img
+div {
+  display: auto;
+}
 body {
   margin: 0;
 }
-html, h1, h2, h3
+html, h1
 {
   margin: 0;
   padding: 0;
@@ -34,6 +37,7 @@ img {
   display: block;
   width: 100%;
   height: auto;
+  // height: 100%;
 }
 
 input[type="password"],

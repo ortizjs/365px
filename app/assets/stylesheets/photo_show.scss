@@ -7,7 +7,7 @@
 }
 
 .photo-show-content {
-    height: 60%;
+    height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -18,15 +18,28 @@
 }
 
 .image-div {
-    width: 55%;
-    height: 60%;
+    display: flex;
+    // width: 55%;
+    // height: 60%;
     margin-top: 30px;
     margin-bottom: 30px;
+    width: 40%;
+    // width: 500px;
+    height: 500px;
+    // object-fit: cover;
 }
+.photo-show-image {
+    height: 100%;
+}
+
+// .image-div img {
+//     height: auto;
+// }
 
 .show-page-photo-info {
     display: flex;
     flex-direction: column;
+    // justify-content: flex-start;
     align-items: center;
     width: 100%;
     background-color: white;
@@ -35,10 +48,27 @@
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
 }
+
+.show-page-photo-info-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    // align-items: center;
+    width: 40%;
+    background-color: white;
+    color: black;
+    font-family: "Helvetica Neue", HelveticaNeue, Helvetica, TeXGyreHeros, FreeSans, "Nimbus Sans L", "Liberation Sans", Arial, sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
 .photo-show-title {
     font-size: 24px;
     line-height: 28px;
     // letter-spacing: -0.2px;
+    margin: 0;
+    padding: 0;
+    border: 0;
     font-weight: bold;
     padding: 0.5%;
 }
@@ -52,6 +82,9 @@
     cursor: pointer;
     text-decoration: none;
     transition: color 0.1s ease 0s;
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
 
 .photo-show-delete-button {
@@ -73,4 +106,57 @@
     // size: 100%;
     height: 15%;
     width: 15%;
+}
+
+.show-return-button {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    height: 10px;
+    // border: 1px solid red;
+}
+
+.show-return-button button {
+    font-family: HelveticaNeue, Helvetica, Arial, sansserif;
+    // font-weight: 200;
+    // font-style:;
+    width: 5%;
+    height: 30px;
+    border: none;
+    margin-right: 15px;
+    margin-top: 15px;
+    font-size: 30px;
+    color: white;
+    background-color: inherit;
+}
+.show-page-image-icons {
+    display: flex;
+    justify-content: space-between;
+    // flex-direction: row;
+    width: 170px;
+    // border: 1px solid red;
+}
+
+.show-page-dots{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.fa-heart {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    // padding-right: 10px;
+}
+
+.fa-heart:hover {
+    font: lightseagreen;
+}
+
+.fa-plus-square {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    // padding-right: 10px;
 }
