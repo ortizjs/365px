@@ -95,6 +95,20 @@
     // background-color: white;
 }
 
+.sub-header-no-photos {
+    width:100%;
+    // width:98%;
+    height: 150px;
+    // border: 1px solid red;
+    border-bottom: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 20px;
+    align-items: center;
+    font-weight: bold;
+    font-size:30px;
+}
 .sub-header{
     width:100%;
     // width:98%;

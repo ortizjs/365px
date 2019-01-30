@@ -41,19 +41,36 @@ class UserPhotos extends React.Component {
     }
 
     render() {
-        return (
-            <div className="main-index-content">
-                <div className="sub-header">
-                    <h1>All the photos uploaded by you!</h1>
-                    <h2>Most recent to least. Be proud of your work!</h2>
+        if (this.props.photos.length === 0) {
+            return (
+                <div className="main-index-content">
+                    <div className="sub-header-no-photos">
+                        <h1>You have not uplodad any photos yet! :(</h1>
+                        {/* <br/>
+                        <br/> */}
+                    </div>
+                    <div className="photos-index-div">
+                        <ul className="photo-index-ul">
+                            {this.showUserPhotos.bind(this)()}
+                        </ul>
+                    </div>
                 </div>
-                <div className="photos-index-div">
-                    <ul className="photo-index-ul">
-                        {this.showUserPhotos.bind(this)()}
-                    </ul>
+            );
+        } else {
+            return (
+                <div className="main-index-content">
+                    <div className="sub-header">
+                        <h1>All the photos uploaded by you!</h1>
+                        <h2>Most recent to least. Be proud of your work!</h2>
+                    </div>
+                    <div className="photos-index-div">
+                        <ul className="photo-index-ul">
+                            {this.showUserPhotos.bind(this)()}
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        );
+            );
+        }
     }
 }
 
