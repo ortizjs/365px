@@ -16,7 +16,10 @@ class UserPhotos extends React.Component {
            let delet = "";
         //    console.log(photo.photographer_id, user_id);
             if (photo.photographer_id === parseInt(user_id)) {
-               delet = <button onClick={() => deletePhoto(photo.id).then(() => that.props.history.go(0))}> Delete </button>
+            //    delet = <button className="photo-show-delete-button" onClick={() => deletePhoto(photo.id).then(() => that.props.history.go(0))}> Delete </button>
+               delet = <button className="photo-show-delete-button" onClick={() => deletePhoto(photo.id).then(() => that.props.history.go(0))}>
+                <i className="fas fa-trash-alt"></i>
+               </button>
            }
            return (
             //    <div key={i} className="user-photos-container-div">
