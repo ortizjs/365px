@@ -8,7 +8,8 @@ class PhotoShow extends React.Component {
     }
     
     render() {
-        // console.log(this.props.photos);
+        // let photographer_username = this.props.photos[this.props.match.params.photoId].username;
+        // console.log(this.props.photo);
         if (this.props.photo === undefined) {
             return (
                 <div>
@@ -28,7 +29,8 @@ class PhotoShow extends React.Component {
                         </div>
                         <div className="photo-by-div">
                             <h3>
-                                By: 
+                                {/* By: {photographer_username} {this.props.photo.last_name} */}
+                                By: {this.props.photo.first_name} {this.props.photo.last_name}
                             </h3>
                         </div>
                         <div className="show-return-button">
