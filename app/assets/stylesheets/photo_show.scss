@@ -25,12 +25,33 @@
 }
 
 .show-page-photo-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
     background-color: white;
     color: black;
+    font-family: "Helvetica Neue", HelveticaNeue, Helvetica, TeXGyreHeros, FreeSans, "Nimbus Sans L", "Liberation Sans", Arial, sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
 }
-.photo-by-div{
-    color: white;
+.photo-show-title {
+    font-size: 24px;
+    line-height: 28px;
+    // letter-spacing: -0.2px;
+    font-weight: bold;
+    padding: 0.5%;
+}
+
+.photo-show-by{
+    position: relative;
+    font-size: 18px;
+    line-height: 24px;
+    color: rgb(34, 34, 34);
+    font-weight: normal;
+    cursor: pointer;
+    text-decoration: none;
+    transition: color 0.1s ease 0s;
 }
 
 .photo-show-delete-button {
