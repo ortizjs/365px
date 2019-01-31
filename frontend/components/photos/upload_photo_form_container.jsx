@@ -22,4 +22,4 @@ const mDTP = (dispatch) => {
     });
 };
 
-export default connect(mSTP, mDTP)(UploadForm);
+export default withRouter(connect(mSTP, mDTP)(UploadForm));

@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import UploadPhotoFormContainer from '../photos/upload_photo_form_container';
+
 
 class Greeting extends React.Component {
         
@@ -67,10 +69,38 @@ class Greeting extends React.Component {
         }
     }
     
+    
+    upload(e) {
+        e.preventDefault();
+        document.getElementById("upload-modal").style.display = 'block';
+    }
+    
+    closeModal(e) {
+        e.preventDefault();
+        document.getElementById("upload-modal").style.display = 'none';
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    
+    // outsideCloseModal(e) {
+    //     e.preventDefault();
+    //     // if (e.target == modal) {
+    //     if (e.target == document.getElementById("upload-modal")) {
+    //         // modal.style.display = "none";
+    //         document.getElementById("upload-modal").style.display = 'none';
+    //     }
+    // }
+
+    // window.onclick = function (event) {
+    //     if (event.target == modal) {
+    //         modal.style.display = "none";
+    //     }
+    
+    
     uploadButton(){
         if (this.props.currentUser) {
             return (
-                <button className="header-upload-button">
+                <button className="header-upload-button" onClick={this.upload}>
                     <i className="fas fa-cloud-upload-alt"></i>
                 </button>
             )
@@ -87,6 +117,8 @@ class Greeting extends React.Component {
         let bellIcon = this.props.currentUser ? <i className="far fa-bell"></i> : none;
         let dotsIcon = this.props.currentUser ? <i className="fas fa-ellipsis-h"></i> : none;
         let uploadB = this.uploadButton();
+        let spanClose = document.getElementsByClassName("close-button-wrp")[0];
+        let modal = document.getElementById('upload-modal');
 
 
         if (this.props.location.pathname === "/" && !this.props.currentUser) {
@@ -134,6 +166,18 @@ class Greeting extends React.Component {
                             {logoutB}
                         </div>
                     </div>
+                    
+                    <div id='upload-modal' className="upload-modal">
+                        <div class="upload-modal-content">
+                            <div className='close-button-wrp'>
+                                <button className='close-button' onClick={this.closeModal}>×</button>
+                            </div>
+                            <div className='form-container'>
+                                <UploadPhotoFormContainer />
+                            </div>
+                        </div>
+                    </div>
+                    
                 </nav>
             )
         }

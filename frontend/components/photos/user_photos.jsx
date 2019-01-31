@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
 import PhotoIndexItem from './photos_index_item';
+import UploadPhotoFormContainer from './upload_photo_form_container';
 
 class UserPhotos extends React.Component {
 
@@ -14,9 +15,7 @@ class UserPhotos extends React.Component {
            let deletePhoto = this.props.deletePhoto;
            let that = this;
            let delet = "";
-        //    console.log(photo.photographer_id, user_id);
             if (photo.photographer_id === parseInt(user_id)) {
-            //    delet = <button className="photo-show-delete-button" onClick={() => deletePhoto(photo.id).then(() => that.props.history.go(0))}> Delete </button>
                delet = <button className="photo-show-delete-button" onClick={() => deletePhoto(photo.id).then(() => that.props.history.go(0))}>
                 <i className="fas fa-trash-alt"></i>
                </button>
@@ -40,6 +39,16 @@ class UserPhotos extends React.Component {
         return photos
     }
 
+    // upload(e) {
+    //     e.preventDefault();
+    //     document.getElementById("upload-modal").style.display = 'block';
+    // }
+    
+    // closeModal(e) {
+    //     e.preventDefault();
+    //     document.getElementById("upload-modal").style.display = 'none';
+    // }
+
     render() {
         if (this.props.photos.length === 0) {
             return (
@@ -54,6 +63,16 @@ class UserPhotos extends React.Component {
                             {this.showUserPhotos.bind(this)()}
                         </ul>
                     </div>
+
+                    <div id='upload-modal' className="upload-modal">
+                        <div className='close-button-wrp'>
+                            <button className='close-button' onClick={this.closeModal}>×</button>
+                        </div>
+                        <div className='form-container'>
+                            <UploadPhotoFormContainer />
+                        </div>
+                    </div>
+                    
                 </div>
             );
         } else {
@@ -68,6 +87,15 @@ class UserPhotos extends React.Component {
                             {this.showUserPhotos.bind(this)()}
                         </ul>
                     </div>
+
+                    {/* <div id='upload-modal' className="upload-modal">
+                        <div className='close-button-wrp'>
+                            <button className='close-button' onClick={this.closeModal}>×</button>
+                        </div>
+                        <div className='form-container'>
+                            <UploadPhotoFormContainer />
+                        </div>
+                    </div> */}
                 </div>
             );
         }
