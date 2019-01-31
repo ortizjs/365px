@@ -55,7 +55,6 @@ class SessionForm extends React.Component {
                             <br />
                             <label className="login-username-label"> Username
                                 <input type="text"
-                                    // placeholder="Username"
                                     value={this.state.username}
                                     onChange={this.update('username')}
                                     className="login-input"
@@ -64,16 +63,12 @@ class SessionForm extends React.Component {
                             <br />
                             <label className="login-password-label"> Password
                                 <input type="password"
-                                    // placeholder="Password"
                                     value={this.state.password}
                                     onChange={this.update('password')}
                                     className="login-input"
                                 />
                             </label>
-
                             <br />
-                            
-                            {/* <input className="login-button" type="submit" value="Log In" />  */}
                             <input className="login-button" type="submit" value="Log In" 
                                 onClick={() => this.props.processForm(this.state).then(() => this.props.history.push("/users"))}/> 
                             <br />
@@ -99,7 +94,6 @@ class SessionForm extends React.Component {
                 <div className="signup-form-container">
                     <div className="signup-inner">
                         <form onSubmit={this.handleSubmit} className="signup-form-box">
-                            {/* {this.renderErrors()} */}
                             <div className="message-div">
                                 <h1 className="join-banner">
                                     Join 365px!
@@ -109,10 +103,8 @@ class SessionForm extends React.Component {
                                 </h2>
                             </div>
                             <br />
-                            {/* Please {this.props.formType} or {this.props.navLink} */}
                             <div className="signup-form">
                                 <br />
-                                {/* <label className="signup-username-label">  Username: */}
                                 <label className="signup-labels">  Username:
                                     <input type="text"
                                         value={this.state.username}
@@ -156,8 +148,6 @@ class SessionForm extends React.Component {
                                 <br />
                                 <input className="session-submit-button" type="submit" value="Sign up"
                                     onClick={() => this.props.processForm(this.state).then(() => this.props.history.push("/users"))} /> 
-                                {/* <input className="session-submit-button" type="submit" value="Sign up" /> */}
-                                {/* {this.renderErrors()} */}
                             </div>
                         </form>
                         <div className="bottom-terms-conatiner">

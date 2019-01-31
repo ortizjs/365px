@@ -9,18 +9,15 @@ class PhotosIndex extends React.Component {
 
     render() {
         let photos = this.props.photos.reverse().map((photo, i) => {
-            // if (photo.photographer_id === user_id){
-
             return (
-                    <ul key={i} className="each-photo-ul">
-                        <PhotoIndexItem
-                            key={photo.id}
-                            title={photo.title}
-                            photo={photo}
-                        />
-                  </ul>
-                );
-            // }
+                <ul key={i} className="each-photo-ul">
+                    <PhotoIndexItem
+                        key={photo.id}
+                        title={photo.title}
+                        photo={photo}
+                    />
+                </ul>
+            );
         });
 
         return (
