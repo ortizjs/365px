@@ -12,6 +12,7 @@ const mapStateToProps = (state, ownProps) => {
 
 const mapDispatchToProps = dispatch => ({
     logout: () => dispatch(logout())
+
 });
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Greeting));

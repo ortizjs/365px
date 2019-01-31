@@ -48,7 +48,6 @@ class Greeting extends React.Component {
         let otherAvatar = window.images.avatar2
         let userAvatar = this.props.currentUser.first_name === "Jim" ? jimAvatar : otherAvatar
         let userId = this.props.user_id
-        // debugger
         return(
             <div className="personal-image-div">
                 <div className="avatar">
@@ -56,9 +55,6 @@ class Greeting extends React.Component {
                         <img className="avatar-image" src={userAvatar} alt="" />
                     </Link>
                 </div>
-                {/* <div className="avatar">
-                    <img className="avatar-image" src={userAvatar} alt="" />
-                </div> */}
             </div>
         );
     }
@@ -71,6 +67,15 @@ class Greeting extends React.Component {
         }
     }
     
+    uploadButton(){
+        if (this.props.currentUser) {
+            return (
+                <button className="header-upload-button">
+                    <i className="fas fa-cloud-upload-alt"></i>
+                </button>
+            )
+        }
+    }
 
     render() {
         let none;
@@ -81,6 +86,7 @@ class Greeting extends React.Component {
         let planeIcon = this.props.currentUser ? <i className="far fa-paper-plane"></i> : none;
         let bellIcon = this.props.currentUser ? <i className="far fa-bell"></i> : none;
         let dotsIcon = this.props.currentUser ? <i className="fas fa-ellipsis-h"></i> : none;
+        let uploadB = this.uploadButton();
 
 
         if (this.props.location.pathname === "/" && !this.props.currentUser) {
@@ -121,6 +127,9 @@ class Greeting extends React.Component {
                             </div>
                             <div className="bell-icon-display">
                                 {bellIcon}
+                            </div>
+                            <div className="cloud-upload-icon-display">
+                                {uploadB}
                             </div>
                             {logoutB}
                         </div>

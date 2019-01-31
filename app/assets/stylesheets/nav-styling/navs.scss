@@ -156,6 +156,28 @@
     font-size: 30px;
 }
 
+.cloud-upload-icon-display {
+    margin-left: 12px;
+    // border: 1px solid blue;
+}
+
+.header-upload-button {
+    border:none;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.fa-cloud-upload-alt {
+    // border: 1px solid red;
+    margin-top: 8px;
+    font-size: 30px;
+    padding: none;
+}
+
+.fa-cloud-upload-alt:hover {
+    color: grey;
+}
+
 .header-logout-button {
     text-align: center;
     font-size: 13px;
