@@ -83,9 +83,10 @@ class Greeting extends React.Component {
     // When the user clicks anywhere outside of the modal, close it
     
     // outsideCloseModal(e) {
+    // window.onclick = function outsideCloseModal(e) {
     //     e.preventDefault();
     //     // if (e.target == modal) {
-    //     if (e.target == document.getElementById("upload-modal")) {
+    //     if (e.target !== document.getElementById("upload-modal")) {
     //         // modal.style.display = "none";
     //         document.getElementById("upload-modal").style.display = 'none';
     //     }
@@ -129,7 +130,7 @@ class Greeting extends React.Component {
             )
         } else {
             return (
-                <nav className="greeting-nav">
+                <nav className="greeting-nav" >
                     
                         <div className="logo-image-div">
                             <Link to={linkTo} className="image-logo-link">
