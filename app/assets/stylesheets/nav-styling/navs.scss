@@ -279,15 +279,15 @@
 }
 
 /* The Close Button */
-.close {
+.close-button {
   color: #aaaaaa;
-  float: right;
-  font-size: 28px;
+  float: left;
+  font-size: 20px;
   font-weight: bold;
 }
 
-.close:hover,
-.close:focus {
+.close-button:hover,
+.close-button:focus {
   color: #000;
   text-decoration: none;
   cursor: pointer;
@@ -308,6 +308,7 @@
     height: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .photo-title-label{
@@ -321,12 +322,61 @@
     // border: 1px solid red;
     border-radius: 3px;
     height: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 2%;
+    width: 79%;
+}
+
+
+.file-upload-container-label {
+    font-family: "Helvetica Neue", HelveticaNeue, Helvetica, TeXGyreHeros, FreeSans, "Nimbus Sans L", "Liberation Sans", Arial, sans-serif;
+    color: black;
+    width: 80%;
+    background-color: lightgray;
+    position: relative;
+    border-radius: 3px;
+    height: 10%;
+    text-align: center;
+    margin-bottom: 2%;
+    cursor: pointer;
+    text-align: center;
+    line-height: 1.95;
+}
+.file-upload-container-label:hover,
+.file-upload-container-label:focus{
+  color: darkcyan;
+//   color: #000;
+  text-decoration: bold;
+  cursor: pointer;
 }
 
 .photo-upload-file{
-    border-radius: 10px;
-    height: 20px;
-    margin-bottom: 20px;
-
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    text-align: center;
 }
+
+.upload-photo-button{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #34bf49;
+    border-color: #34bf49;
+    border-radius: 3px;
+    height: 40px;
+    width: 80%;
+    color: white;
+    // margin-left: 35px;
+ }
+
+.upload-photo-button:hover,
+.upload-photo-button:focus {
+  color: grey;
+//   color: #000;
+  text-decoration: none;
+  cursor: pointer;
+ }
