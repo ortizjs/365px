@@ -11,80 +11,71 @@
 // }
 
 .photo-index-ul {
-    height: 75%;
-    width: 75%;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    padding: none;
     overflow: scroll;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    // padding: none;
+    flex-grow: 1;
+    line-height: 0;
+    margin-left: 30px;
+    // object-fit: cover;
 }
+
+// .photo-index-ul img {
+//     height: 200px;
+//     // width: auto;
+// }
 
 .photos-index-div {
-    margin-top:50px;
-    overflow: scroll;
+    margin-top:20px;
     display: flex;
-    width: 100%;
-    justify-content: center;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    // overflow-y: scroll;
+    // overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
     // border: 1px solid black;
-    // display: flex;
-    // flex-direction: column;
 }
 
-// .user-photos-container-div {
-//     display: flex;
-//     flex-direction: column;
-//     margin-bottom: 50px;
-//     width: 400px;
-//     // border: 1px solid gray;
-//     align-items: center;
-//     padding-bottom:30px;
-// }
-
-// .user-photos-container-div img {
-//     transition: height 0.3s, width 0.3s linear;
-// }
-
-// .user-photos-container-div img:hover{
-//     height: 450px;
-//     width: 550px;
-// }
 
 .photos-index-item-div {
+    position: relative;
     display: flex;
     flex-direction: column;
-    margin-bottom: 50px;
-    width: 400px;
-    // border: 1px solid gray;
+    max-width: 400px;
+    // width: 400px;
+    height: 100%;
     align-items: center;
-    padding-bottom:30px;
+    padding-bottom: 30px;
 }
 
-// .photos-index-item-div img {
-//     transition: height 0.3s, width 0.3s linear;
-// }
-
-// .photos-index-item-div img:hover{
-//     height: 450px;
-//     width: 550px;
-// }
-
-.each-photo-ul {
-    margin: 0 auto;
-    padding: 0px;
-    
+.photos-index-item-div img {
+    width: 100%;
+    height: 100%;
+    // object-fit: contain;
+//    max-width: 50%;
+    // z-index: -1;
 }
 
 .photo-title {
-    margin: 10px;
+    position: absolute;
+    top: 20px;
+    left: 30px;
     font-size: 20px;
-    font-weight: normal;
+    // z-index: 1;
+    // margin: 10px;
+    // font-size: 20px;
+    font-weight: bold;
+    // color: #6b9db1f0;
     color: #3e474cf0;
     text-rendering: optimizeLegibility;
     font-family: "Helvetica Neue", HelveticaNeue, Helvetica, TeXGyreHeros, FreeSans, "Nimbus Sans L", "Liberation Sans", Arial, sans-serif;
-    // text-align: center;
-    // margin-top: 30px;
 }
 
 

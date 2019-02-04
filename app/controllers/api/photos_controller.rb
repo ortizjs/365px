@@ -23,7 +23,6 @@ class Api::PhotosController < ApplicationController
     end
 
     def update
-
     end
 
     def destroy 

@@ -27,9 +27,9 @@ class PhotosIndex extends React.Component {
                     <h2>Based on your activity</h2>
                 </div>
                 <div className="photos-index-div">
-                    <ul className="photo-index-ul">
+                    <div className="photo-index-ul">
                         {photos}
-                    </ul>
+                    </div>
                 </div>
             </div>
         );
