@@ -10,13 +10,13 @@ class PhotosIndex extends React.Component {
     render() {
         let photos = this.props.photos.reverse().map((photo, i) => {
             return (
-                <ul key={i} className="each-photo-ul">
+                <div key={i} className="each-photo-ul">
                     <PhotoIndexItem
                         key={photo.id}
                         title={photo.title}
                         photo={photo}
                     />
-                </ul>
+                </div>
             );
         });
 
