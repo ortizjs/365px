@@ -1,7 +1,6 @@
 .photo-show-main-div {
     align-items: center;
     background-color: #222;
-    // background-color: black;
     height: 100%; 
     width: 100%;
 }
@@ -13,34 +12,24 @@
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
-    // margin-top: 30px;
-    // margin-bottom: 30px;
 }
 
 .image-div {
     display: flex;
-    // width: 55%;
-    // height: 60%;
     margin-top: 30px;
     margin-bottom: 30px;
     width: 40%;
-    // width: 500px;
     height: 500px;
-    // object-fit: cover;
 }
 .photo-show-image {
     height: 100%;
     object-fit: fill;
 }
 
-// .image-div img {
-//     height: auto;
-// }
 
 .show-page-photo-info {
     display: flex;
     flex-direction: column;
-    // justify-content: flex-start;
     align-items: center;
     width: 100%;
     background-color: white;
@@ -54,7 +43,6 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    // align-items: center;
     width: 40%;
     background-color: white;
     color: black;
@@ -66,7 +54,6 @@
 .photo-show-title {
     font-size: 24px;
     line-height: 28px;
-    // letter-spacing: -0.2px;
     margin: 0;
     padding: 0;
     border: 0;
@@ -89,22 +76,14 @@
 }
 
 .photo-show-delete-button {
-    // width: 80px;
-    // height: 55%;
-    // background-color: #f7918a;
-    // border-radius: 15px;
     margin-top: 10px;
-    // margin-right: 50px;
-    // border: none;
     background-color: #e2e8ed;
     border: none;
-    // size: 10%;
     height: 5%;
     width: 5%;
 }
 .fa-trash-alt {
     color: #222;
-    // size: 100%;
     height: 15%;
     width: 15%;
 }
@@ -114,13 +93,10 @@
     justify-content: flex-start;
     width: 100%;
     height: 10px;
-    // border: 1px solid red;
 }
 
 .show-return-button button {
     font-family: HelveticaNeue, Helvetica, Arial, sansserif;
-    // font-weight: 200;
-    // font-style:;
     width: 5%;
     height: 30px;
     border: none;
@@ -133,9 +109,7 @@
 .show-page-image-icons {
     display: flex;
     justify-content: space-between;
-    // flex-direction: row;
     width: 170px;
-    // border: 1px solid red;
 }
 
 .show-page-dots{
@@ -148,7 +122,6 @@
     width: 40px;
     height: 40px;
     cursor: pointer;
-    // padding-right: 10px;
 }
 
 .fa-heart:hover {
@@ -159,5 +132,4 @@
     width: 40px;
     height: 40px;
     cursor: pointer;
-    // padding-right: 10px;
 }
