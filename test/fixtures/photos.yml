@@ -9,6 +9,14 @@
 #  photographer_id :integer          not null
 #  created_at      :datetime         not null
 #  updated_at      :datetime         not null
+#  camera          :string
+#  lens            :string
+#  iso             :string
+#  focal_distance  :string
+#  aperture        :string
+#  shatter_speed   :string
+#  location        :string
+#  date_taken      :string
 #
 
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html

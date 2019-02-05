@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_12_17_182537) do
+ActiveRecord::Schema.define(version: 2019_02_05_205541) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -43,6 +43,14 @@ ActiveRecord::Schema.define(version: 2018_12_17_182537) do
     t.integer "photographer_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "camera"
+    t.string "lens"
+    t.string "iso"
+    t.string "focal_distance"
+    t.string "aperture"
+    t.string "shatter_speed"
+    t.string "location"
+    t.string "date_taken"
     t.index ["photographer_id"], name: "index_photos_on_photographer_id"
   end
 
