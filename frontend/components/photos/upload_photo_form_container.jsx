@@ -8,6 +8,16 @@ const mSTP = (state, ownProps) => {
     let currentUserId = state.session.id;
     let photo = {
         title: "",
+        category: "",
+        description: "",
+        camera: "",
+        lens: "",
+        dateTaken: "",
+        iso: "",
+        focalDistance: "",
+        shatterSpeed: "",
+        aperture: "",
+        location: "",
         photographerId: currentUserId,
         photoFile: null
     };

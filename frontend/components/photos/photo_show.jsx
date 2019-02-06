@@ -36,14 +36,50 @@ class PhotoShow extends React.Component {
                                 <h2 className="photo-show-title">
                                     {this.props.photo.title}
                                 </h2>
+                                
                                 <h3 className="photo-show-by">
                                     By: {this.props.photo.first_name} {this.props.photo.last_name}
                                 </h3>
-                                {/* <div className="show-return-button"> */}
-                                {/* <button onClick={() => this.props.history.push("/users")}> Close </button> */}
-                                {/* <button onClick={() => deletePhoto(photo.id).then(() => that.props.history.go(0))}> Delete </button> */}
-                                {/* <Link to="/users">Go Back</Link> */}
-                                {/* </div> */}
+
+                                <h3 className="photo-show-by">
+                                    Location: {this.props.photo.location}
+                                </h3>
+
+                                <h3 className="photo-show-by">
+                                    Date: {this.props.photo.date_taken}
+                                </h3>
+
+                                <h3 className="photo-show-by">
+                                    description: {this.props.photo.description}
+                                </h3>
+
+                                <h3 className="photo-show-by">
+                                    Camera: {this.props.photo.camera}
+                                </h3>
+
+                                <h3 className="photo-show-by">
+                                    Lens: {this.props.photo.lens} 
+                                </h3>
+
+                                <h3 className="photo-show-by">
+                                    Length of Lens: {this.props.photo.focal_distance}
+                                </h3>
+
+                                <h3 className="photo-show-by">
+                                    Aperture: {this.props.photo.aperture}
+                                </h3>
+
+                                <h3 className="photo-show-by">
+                                    s-speed: {this.props.photo.shatter_speed}
+                                </h3>
+
+                                <h3 className="photo-show-by">
+                                    ISO: {this.props.photo.iso}
+                                </h3>
+
+                                <h3 className="photo-show-by">
+                                    Category: {this.props.category}
+                                </h3>
                             </div>
                             
                         </div>

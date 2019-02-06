@@ -20,7 +20,8 @@
 #
 
 class Photo < ApplicationRecord
-    validates :title, :camera, :lens, :date_taken, presence: true
+    validates :title, presence: true
+    # validates :title, :camera, :lens, :date_taken, presence: true
 
     has_one_attached :attached_photo
 

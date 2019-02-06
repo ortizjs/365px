@@ -24,7 +24,17 @@ export default class UploadForm extends React.Component {
         e.preventDefault();
         let formData = new FormData();
         formData.append("photo[title]", this.state.title);
-        formData.append("photo[photographerId]", this.state.photographerId);
+        formData.append("photo[category]", this.state.category);
+        formData.append("photo[description]", this.state.description);
+        formData.append("photo[camera]", this.state.camera);
+        formData.append("photo[lens]", this.state.lens);
+        formData.append("photo[date_taken]", this.state.dateTaken);
+        formData.append("photo[iso]", this.state.iso);
+        formData.append("photo[focal_distance]", this.state.focalDistance);
+        formData.append("photo[shatter_speed]", this.state.shatterSpeed);
+        formData.append("photo[aperture]", this.state.aperture);
+        formData.append("photo[location]", this.state.location);
+        formData.append("photo[photographer_id]", this.state.photographerId);
         formData.append("photo[attached_photo]", this.state.photoFile);
         this.props.createPhoto(formData);
     }
@@ -34,13 +44,52 @@ export default class UploadForm extends React.Component {
         return (
             <form className="photo-upload-form" onSubmit={this.handleSubmit}>
                 <label htmlFor="photo-title" className="photo-title-label" > Title of photo </label>
-                <input type="text"
+                <input placeholder="Title" type="text"
                 // id="photo-title"
-                className="photo-upload-title"
+                    className="photo-upload-title"
                 // value={this.state.title}
+                    onChange={this.handleInput("title")}/>
 
-                onChange={this.handleInput("title")}/>
+                <input placeholder="Location" type="text"
+                    className="photo-upload-locationphoto-upload-field-format"
+                    onChange={this.handleInput("location")}/>
+
+                <input placeholder="Date Taken" type="date"
+                    className="photo-upload-date-format"
+                    onChange={this.handleInput("date_taken")}/>
+
+                <input placeholder="Description" type="text"
+                    className="photo-upload-field-format"
+                    onChange={this.handleInput("description")}/>
+
+                <input placeholder="Camera" type="text"
+                    className="photo-upload-field-format"
+                    onChange={this.handleInput("camera")}/>
+
+                <input placeholder="Lens" type="text"
+                    className="photo-upload-field-format"
+                    onChange={this.handleInput("lens")}/>
+
+                <input placeholder="Length of Lens" type="text"
+                    className="photo-upload-field-format"
+                    onChange={this.handleInput("focal_distance")}/>
+
+                <input placeholder="Aperture/F-number" type="text"
+                    className="photo-upload-field-format"
+                    onChange={this.handleInput("aperture")}/>
+
+                <input placeholder="Shatter Speed" type="text"
+                    className="photo-upload-field-format"
+                    onChange={this.handleInput("shatter_speed")}/>
+
+                <input placeholder="ISO" type="text"
+                    className="photo-upload-field-format"
+                    onChange={this.handleInput("iso")}/>
                 
+                <input placeholder="Category" type="text"
+                    className="photo-upload-field-format"
+                    onChange={this.handleInput("category")}/>
+  
                 <label className="file-upload-container-label"> Select a file!
                     <input type="file" className="photo-upload-file"
                         onChange={this.handleFile}/>

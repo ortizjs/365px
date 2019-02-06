@@ -32,7 +32,7 @@ export const fetchPhotos = () => dispatch => (
 // );
 
 export const fetchPhoto = (id) => dispatch => (
-    PhotoAPIUtil.fetchPhoto(id).then(id => dispatch(receivePhoto(id)))
+    PhotoAPIUtil.fetchPhoto(id).then(photo => dispatch(receivePhoto(photo)))
 );
 
 export const createPhoto = (photo) => dispatch => (
