@@ -70,7 +70,7 @@ class PhotoShow extends React.Component {
                                 </h3>
 
                                 <h3 className="photo-show-by">
-                                    s-speed: {this.props.photo.shatter_speed}
+                                    F-speed: {this.props.photo.shatter_speed}
                                 </h3>
 
                                 <h3 className="photo-show-by">
