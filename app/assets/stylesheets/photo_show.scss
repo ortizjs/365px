@@ -26,6 +26,35 @@
     object-fit: fill;
 }
 
+.show-page-image-icons {
+    padding-top: 20px;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    width: 170px;
+}
+
+.show-page-dots{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.fa-heart {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.fa-heart:hover {
+    font: lightseagreen;
+}
+
+.fa-plus-square {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
 
 .show-page-photo-info {
     display: flex;
@@ -75,6 +104,7 @@
     font-weight: bold;
     padding: 0.5%;
 }
+
 .photo-show-by{
     position: relative;
     font-size: 18px;
@@ -171,8 +201,10 @@
     border: 0;
 }
 
-.photo-show-detail{
-    position: relative;
+.photo-show-detail-four{
+    display: flex;
+    flex-direction: row;
+    // position: relative;
     font-size: 18px;
     line-height: 24px;
     color: rgb(34, 34, 34);
@@ -187,6 +219,156 @@
 
 
 
+.fa-camera {
+    color: #222;
+    height: 3%;
+    width: 3%;
+    // padding-left: 40px;
+    padding-right: 10px;
+    // padding-top: 20px;
+    // padding-bottom: 20px;
+}
+
+.photo-show-detail-five{
+    display: flex;
+    flex-direction: row;
+    // position: relative;
+    font-size: 18px;
+    line-height: 24px;
+    color: rgb(34, 34, 34);
+    font-weight: normal;
+    cursor: pointer;
+    text-decoration: none;
+    transition: color 0.1s ease 0s;
+    margin: 0;
+    padding-top: 15px;
+    border: 0;
+}
+
+.fa-lens {
+    color: #222;
+    height: 3%;
+    width: 3%;
+    padding-right: 5px;
+    padding-top: 10px;
+    transform: rotate(90deg)
+    // padding-top: 20px;
+    // padding-bottom: 20px;
+}
+
+.photo-show-lens{
+    position: relative;
+    font-size: 18px;
+    line-height: 24px;
+    color: rgb(34, 34, 34);
+    font-weight: normal;
+    cursor: pointer;
+    text-decoration: none;
+    transition: color 0.1s ease 0s;
+    margin: 0;
+    padding-left: 5px;
+    border: 0;
+}
+
+.photo-show-detail-six{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    font-size: 18px;
+    line-height: 24px;
+    color: rgb(34, 34, 34);
+    font-weight: normal;
+    cursor: pointer;
+    text-decoration: none;
+    transition: color 0.1s ease 0s;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    border: 0;
+}
+
+.fa-slider{
+    color: #222;
+    height: 3%;
+    width: 3%;
+    // padding-left: 40px;
+    padding-right: 10px;
+    // padding-top: 20px;
+    // padding-bottom: 20px;
+}
+
+.photo-show-aperture{
+    position: relative;
+    font-size: 18px;
+    line-height: 24px;
+    color: rgb(34, 34, 34);
+    font-weight: normal;
+    cursor: pointer;
+    text-decoration: none;
+    transition: color 0.1s ease 0s;
+    margin: 0;
+    padding-left: 20px;
+    border: 0;
+}
+
+.photo-show-f-speed{
+    position: relative;
+    font-size: 18px;
+    line-height: 24px;
+    color: rgb(34, 34, 34);
+    font-weight: normal;
+    cursor: pointer;
+    text-decoration: none;
+    transition: color 0.1s ease 0s;
+    margin: 0;
+    padding-left: 20px;
+    border: 0;
+}
+
+.photo-show-iso{
+    position: relative;
+    font-size: 18px;
+    line-height: 24px;
+    color: rgb(34, 34, 34);
+    font-weight: normal;
+    cursor: pointer;
+    text-decoration: none;
+    transition: color 0.1s ease 0s;
+    margin: 0;
+    padding-left: 20px;
+    border: 0;
+}
+
+
+.photo-show-detail-seven{
+    position: relative;
+    font-size: 18px;
+    line-height: 24px;
+    color: rgb(34, 34, 34);
+    font-weight: normal;
+    cursor: pointer;
+    text-decoration: none;
+    transition: color 0.1s ease 0s;
+    margin: 0;
+    padding-bottom: 20px;
+    border: 0;
+}
+
+
+
+.photo-show-detail{
+    position: relative;
+    font-size: 18px;
+    line-height: 24px;
+    color: rgb(34, 34, 34);
+    font-weight: normal;
+    cursor: pointer;
+    text-decoration: none;
+    transition: color 0.1s ease 0s;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
 
 .photo-show-delete-button {
     margin-top: 10px;
@@ -218,35 +400,6 @@
     font-size: 30px;
     color: white;
     background-color: inherit;
-}
-.show-page-image-icons {
-    padding-top: 20px;
-    padding-bottom: 15px;
-    display: flex;
-    justify-content: space-between;
-    width: 170px;
-}
-
-.show-page-dots{
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-}
-
-.fa-heart {
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-}
-
-.fa-heart:hover {
-    font: lightseagreen;
-}
-
-.fa-plus-square {
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
 }
 
 .photo-show-footer {

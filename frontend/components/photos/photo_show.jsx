@@ -58,33 +58,42 @@ class PhotoShow extends React.Component {
                                     </h3>
                                 </div>
 
-                                <h3 className="photo-show-detail">
-                                    Camera: {this.props.photo.camera}
-                                </h3>
+                                <div className="photo-show-detail-four">
+                                    <img className="fa-camera" src="https://img.icons8.com/ios/50/000000/unsplash.png" value="camera"></img>
+                                    <h3 className="photo-show-detail">
+                                        {this.props.photo.camera}
+                                    </h3>
+                                </div>
+                                <div className="photo-show-detail-five">
+                                    <img className="fa-lens" src="https://img.icons8.com/ios/50/000000/large-lens.png"></img>
+                                    <h3 className="photo-show-lens">
+                                        {this.props.photo.lens} 
+                                    </h3>
+                                </div>
+                                <div className="photo-show-detail-six">
+                                    <img className="fa-slider" src="https://img.icons8.com/ios/50/000000/sorting-options.png"></img>
+                                    <h3 className="photo-show-detail">
+                                        {this.props.photo.focal_distance}
+                                    </h3>
+                                    <br/>
+                                    <h3 className="photo-show-aperture">
+                                        Aperture: {this.props.photo.aperture}
+                                    </h3>
 
-                                <h3 className="photo-show-detail">
-                                    Lens: {this.props.photo.lens} 
-                                </h3>
+                                    <h3 className="photo-show-f-speed">
+                                        F-speed: {this.props.photo.shatter_speed}
+                                    </h3>
 
-                                <h3 className="photo-show-detail">
-                                    Length of Lens: {this.props.photo.focal_distance}
-                                </h3>
+                                    <h3 className="photo-show-iso">
+                                        ISO: {this.props.photo.iso}
+                                    </h3>
+                                </div>
 
-                                <h3 className="photo-show-detail">
-                                    Aperture: {this.props.photo.aperture}
-                                </h3>
-
-                                <h3 className="photo-show-detail">
-                                    F-speed: {this.props.photo.shatter_speed}
-                                </h3>
-
-                                <h3 className="photo-show-detail">
-                                    ISO: {this.props.photo.iso}
-                                </h3>
-
-                                <h3 className="photo-show-detail">
-                                    Category: {this.props.photo.category}
-                                </h3>
+                                <div className="photo-show-detail-seven">
+                                    <h3 className="photo-show-detail">
+                                        Category: {this.props.photo.category}
+                                    </h3>
+                                </div>
                             </div>
                             
                         </div>
