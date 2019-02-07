@@ -169,7 +169,7 @@ class Greeting extends React.Component {
                     </div>
                     
                     <div id='upload-modal' className="upload-modal">
-                        <div class="upload-modal-content">
+                        <div className="upload-modal-content">
                             <div className='close-button-wrp'>
                                 <button className='close-button' onClick={this.closeModal}>×</button>
                             </div>

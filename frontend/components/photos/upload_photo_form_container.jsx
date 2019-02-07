@@ -5,6 +5,7 @@ import { createPhoto } from '../../actions/photo_actions';
 
 const mSTP = (state, ownProps) => {
     // let currentUserId = state.entities.users[1].id;
+    // debugger
     let currentUserId = state.session.id;
     let photo = {
         title: "",
@@ -12,10 +13,10 @@ const mSTP = (state, ownProps) => {
         description: "",
         camera: "",
         lens: "",
-        dateTaken: "",
+        date_taken: "",
         iso: "",
-        focalDistance: "",
-        shatterSpeed: "",
+        focal_distance: "",
+        shatter_speed: "",
         aperture: "",
         location: "",
         photographerId: currentUserId,

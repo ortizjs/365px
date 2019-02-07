@@ -78,7 +78,7 @@ class PhotoShow extends React.Component {
                                 </h3>
 
                                 <h3 className="photo-show-by">
-                                    Category: {this.props.category}
+                                    Category: {this.props.photo.category}
                                 </h3>
                             </div>
                             

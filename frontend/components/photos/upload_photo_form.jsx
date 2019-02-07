@@ -28,10 +28,10 @@ export default class UploadForm extends React.Component {
         formData.append("photo[description]", this.state.description);
         formData.append("photo[camera]", this.state.camera);
         formData.append("photo[lens]", this.state.lens);
-        formData.append("photo[date_taken]", this.state.dateTaken);
+        formData.append("photo[date_taken]", this.state.date_taken);
         formData.append("photo[iso]", this.state.iso);
-        formData.append("photo[focal_distance]", this.state.focalDistance);
-        formData.append("photo[shatter_speed]", this.state.shatterSpeed);
+        formData.append("photo[focal_distance]", this.state.focal_distance);
+        formData.append("photo[shatter_speed]", this.state.shatter_speed);
         formData.append("photo[aperture]", this.state.aperture);
         formData.append("photo[location]", this.state.location);
         formData.append("photo[photographer_id]", this.state.photographerId);
@@ -95,7 +95,6 @@ export default class UploadForm extends React.Component {
                         onChange={this.handleFile}/>
                 </label>
                 <button className="upload-photo-button" onClick={() => this.props.history.go(0)}> Upload a new Photo!</button>
-                {/* <button onClick={() => this.props.history.push(`/users/${this.state.photographerId}`)}> Upload a new Photo!</button> */}
             </form>
         );
     }
