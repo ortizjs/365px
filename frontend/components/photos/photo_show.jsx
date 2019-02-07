@@ -27,61 +27,69 @@ class PhotoShow extends React.Component {
                         <div className="show-page-photo-info">
                             <div className="show-page-photo-info-inner">
                                 <div className="show-page-image-icons" >
-                                    {/* <i class="fal fa-heart"></i> */}
                                     <img className="fa-heart" src="https://img.icons8.com/ios/50/000000/like.png" value="Like"></img>
                                     <img className="fa-plus-square" src="https://img.icons8.com/ios/50/000000/checked-checkbox.png"></img>
-                                    {/* <i className="far fa-plus-square"></i> */}
                                     <img className="show-page-dots" src="https://img.icons8.com/ios/50/000000/more.png"></img>
                                 </div>
-                                <h2 className="photo-show-title">
-                                    {this.props.photo.title}
-                                </h2>
-                                
-                                <h3 className="photo-show-by">
-                                    By: {this.props.photo.first_name} {this.props.photo.last_name}
-                                </h3>
+                                <div className="photo-show-detail-one">
+                                    <h2 className="photo-show-title">
+                                        {this.props.photo.title}
+                                    </h2>
+                                    
+                                    <h3 className="photo-show-by">
+                                        By: {this.props.photo.first_name} {this.props.photo.last_name}
+                                    </h3>
+                                </div>
 
-                                <h3 className="photo-show-by">
-                                    Location: {this.props.photo.location}
-                                </h3>
+                                <div className="photo-show-detail-two">
+                                    <img className="fa-location-marker" src="https://img.icons8.com/ios/50/000000/marker.png" value="Location"></img>
+                                    <h3 className="photo-show-location">
+                                        {this.props.photo.location}
+                                    </h3>
+                                    <img className="fa-calendar" src="https://img.icons8.com/ios/50/000000/calendar.png" value="calendar"></img>
+                                    <h3 className="photo-show-upload-date">
+                                        {this.props.photo.date_taken}
+                                    </h3>
+                                </div>
 
-                                <h3 className="photo-show-by">
-                                    Date: {this.props.photo.date_taken}
-                                </h3>
+                                <div className="photo-show-detail-three">
+                                    <h3 className="photo-show-detail">
+                                        {this.props.photo.description}
+                                    </h3>
+                                </div>
 
-                                <h3 className="photo-show-by">
-                                    description: {this.props.photo.description}
-                                </h3>
-
-                                <h3 className="photo-show-by">
+                                <h3 className="photo-show-detail">
                                     Camera: {this.props.photo.camera}
                                 </h3>
 
-                                <h3 className="photo-show-by">
+                                <h3 className="photo-show-detail">
                                     Lens: {this.props.photo.lens} 
                                 </h3>
 
-                                <h3 className="photo-show-by">
+                                <h3 className="photo-show-detail">
                                     Length of Lens: {this.props.photo.focal_distance}
                                 </h3>
 
-                                <h3 className="photo-show-by">
+                                <h3 className="photo-show-detail">
                                     Aperture: {this.props.photo.aperture}
                                 </h3>
 
-                                <h3 className="photo-show-by">
+                                <h3 className="photo-show-detail">
                                     F-speed: {this.props.photo.shatter_speed}
                                 </h3>
 
-                                <h3 className="photo-show-by">
+                                <h3 className="photo-show-detail">
                                     ISO: {this.props.photo.iso}
                                 </h3>
 
-                                <h3 className="photo-show-by">
+                                <h3 className="photo-show-detail">
                                     Category: {this.props.photo.category}
                                 </h3>
                             </div>
                             
+                        </div>
+                        <div className="photo-show-footer">
+
                         </div>
                         {/* <div className="photo-by-div"> */}
                             {/* <h3>
