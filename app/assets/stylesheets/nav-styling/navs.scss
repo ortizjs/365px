@@ -274,8 +274,8 @@
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 90%;
-  height: 90%;
+  width: 85%;
+  height: 85%;
 }
 
 /* The Close Button */
@@ -301,6 +301,13 @@
     justify-content: center
     // position: relative;
     // position: center;
+}
+
+.photo-upload-form-div {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
 }
 
 .photo-upload-form{

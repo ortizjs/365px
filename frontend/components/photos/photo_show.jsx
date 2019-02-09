@@ -2,10 +2,20 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 class PhotoShow extends React.Component {
+    constructor(props) {
+        super(props);
+    }
     componentDidMount() {
         let photoId = this.props.match.params.photoId;
         this.props.fetchPhoto(photoId);
+        // document.getElementById('heart-img').addEventListener('click', function () {
+        //     document.getElementsByClassName("heart-icon-container")[0].style.display = 'block';
+        //     document.getElementById('heart-img').style.display = 'none';
+
+        // });
     }
+    
+    
     
     render() {
         if (this.props.photo === undefined) {
@@ -27,7 +37,10 @@ class PhotoShow extends React.Component {
                         <div className="show-page-photo-info">
                             <div className="show-page-photo-info-inner">
                                 <div className="show-page-image-icons" >
-                                    <img className="fa-heart" src="https://img.icons8.com/ios/50/000000/like.png" value="Like"></img>
+                                    {/* { <span className="heart-icon-container"> }
+                                        <i className="fas fa-heart heart-icon-container"></i>
+                                    { </span> } */}
+                                    <img id='heart-img' className="fa-heart" src="https://img.icons8.com/ios/50/000000/like.png" value="Like"></img>
                                     <img className="fa-plus-square" src="https://img.icons8.com/ios/50/000000/checked-checkbox.png"></img>
                                     <img className="show-page-dots" src="https://img.icons8.com/ios/50/000000/more.png"></img>
                                 </div>
@@ -113,3 +126,4 @@ class PhotoShow extends React.Component {
 }
 
 export default PhotoShow;
+  

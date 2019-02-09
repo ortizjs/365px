@@ -41,14 +41,22 @@
 }
 
 .fa-heart {
+    // color: red;
     width: 40px;
     height: 40px;
     cursor: pointer;
 }
 
-.fa-heart:hover {
-    font: lightseagreen;
+.fa-heart.heart-icon-container{
+    width: 40px;
+    height: 40px;
+    display: none;
+    color: red;
 }
+
+// .fa-heart:hover {
+//     font: lightseagreen;
+// }
 
 .fa-plus-square {
     width: 40px;
