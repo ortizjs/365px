@@ -49,6 +49,7 @@ export default class UploadForm extends React.Component {
                 </label>
                 <form className="photo-upload-form" onSubmit={this.handleSubmit}>
                     {/* <label htmlFor="photo-title" className="photo-title-label" > Title of photo </label> */}
+                    <button className="upload-photo-button" onClick={() => this.props.history.go(0)}> Upload a new Photo!</button>
                     <input placeholder="Title" type="text"
                         className="photo-upload-title"
                         onChange={this.handleInput("title")}/>
@@ -96,7 +97,7 @@ export default class UploadForm extends React.Component {
                         <input type="file" className="photo-upload-file"
                             onChange={this.handleFile}/>
                     </label> */}
-                    <button className="upload-photo-button" onClick={() => this.props.history.go(0)}> Upload a new Photo!</button>
+                    
                 </form>
             </div>
         );
