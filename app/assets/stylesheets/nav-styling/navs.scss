@@ -269,8 +269,8 @@
 }
 
 .upload-modal-content {
-//   background-color: #fefefe;
-  background-color: #6cc9f0;
+  background-color: #fefefe;
+//   background-color: #6cc9f0;
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
@@ -278,7 +278,7 @@
   height: 85%;
 }
 
-/* The Close Button */
+/* Close Button */
 .close-button {
   color: #aaaaaa;
   float: left;
@@ -352,7 +352,7 @@
 .file-upload-container-label {
     font-family: "Helvetica Neue", HelveticaNeue, Helvetica, TeXGyreHeros, FreeSans, "Nimbus Sans L", "Liberation Sans", Arial, sans-serif;
     color: black;
-    width: 80%;
+    width: 50%;
     background-color: lightgray;
     position: relative;
     border-radius: 3px;
