@@ -158,7 +158,6 @@
 
 .cloud-upload-icon-display {
     margin-left: 12px;
-    // border: 1px solid blue;
 }
 
 .header-upload-button {
@@ -168,7 +167,6 @@
 }
 
 .fa-cloud-upload-alt {
-    // border: 1px solid red;
     margin-top: 8px;
     font-size: 30px;
     padding: none;
@@ -194,15 +192,11 @@
 }
 
 
-
 .nav-login-button {
     display: flex;
     justify-content: center;
     width: 83px;
     height: 100%;
-    // background-color: #34bf49;
-    // border-radius: 15px;
-    // margin-top: 15px;
     margin-right: 50px;
     border: none;
     padding-top: 10px;
@@ -226,8 +220,6 @@
     width: 83px;
     height: 100%;
     background-color: #34bf49;
-    // border-radius: 15px;
-    // margin-top: 15px;
     margin-right: 50px;
     border: none;
     padding-top: 10px;
@@ -245,12 +237,6 @@
     padding-left: 8px;
     padding-bottom: 8px;
 }
-
-// .nav-var-right {
-//     // display: flex; 
-//     // justify-content: flex-end;
-//     // width: 50%
-// }
 
 
 /* The Modal (background) */
@@ -322,7 +308,7 @@
 
 .file-upload-container-label {
     font-family: "Helvetica Neue", HelveticaNeue, Helvetica, TeXGyreHeros, FreeSans, "Nimbus Sans L", "Liberation Sans", Arial, sans-serif;
-    color: black;
+    color: white;
     width: 25%;
     background-color: #0099e5;
     position: relative;
@@ -362,7 +348,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    // padding-left: 10%;
 }
 
 .photo-title-label{
@@ -378,7 +363,7 @@
     height: 30px;
     margin-bottom: 2%;
     width: 79%;
-    margin-bottom: 15px; 
+    margin-bottom: 10px; 
 }
 
 .photo-upload-location-format {
@@ -387,7 +372,7 @@
     height: 30px;
     margin-bottom: 2%;
     width: 79%;
-    margin-bottom: 15px; 
+    margin-bottom: 10px; 
 }
 
 .photo-upload-field-format {
@@ -396,7 +381,7 @@
     height: 30px;
     margin-bottom: 2%;
     width: 79%;
-    margin-bottom: 15px; 
+    margin-bottom: 10px; 
 }
 .photo-upload-date-format {
     // border: 1px solid red;
@@ -404,7 +389,7 @@
     height: 30px;
     margin-bottom: 2%;
     width: 79%;
-    margin-bottom: 15px; 
+    margin-bottom: 10px; 
 }
 
 
