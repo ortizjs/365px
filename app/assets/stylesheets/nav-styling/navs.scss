@@ -310,55 +310,27 @@
     width: 100%;
 }
 
-.photo-upload-form{
-    width: 35%;
-    height: 100%;
+
+.file-select-div{
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.photo-title-label{
-    text-align: center;
-    color: grey;
-    font-family: "Helvetica Neue", HelveticaNeue, Helvetica, TeXGyreHeros, FreeSans, "Nimbus Sans L", "Liberation Sans", Arial, sans-serif;
-    margin: 20px;
-}
-
-.photo-upload-title {
-    // border: 1px solid red;
-    border-radius: 3px;
-    height: 20px;
-    margin-bottom: 2%;
-    width: 79%;
-}
-
-.photo-upload-field-format {
-    // border: 1px solid red;
-    border-radius: 3px;
-    height: 20px;
-    margin-bottom: 2%;
-    width: 79%;
-}
-.photo-upload-date-format {
-    // border: 1px solid red;
-    border-radius: 3px;
-    height: 50px;
-    margin-bottom: 2%;
-    width: 79%;
+    height: 100%;
+    width: 70%;
 }
 
 
 .file-upload-container-label {
     font-family: "Helvetica Neue", HelveticaNeue, Helvetica, TeXGyreHeros, FreeSans, "Nimbus Sans L", "Liberation Sans", Arial, sans-serif;
     color: black;
-    width: 50%;
-    background-color: lightgray;
+    width: 25%;
+    background-color: #0099e5;
     position: relative;
     border-radius: 3px;
     height: 10%;
     text-align: center;
     margin-bottom: 2%;
+    margin-top: 30%;
     cursor: pointer;
     text-align: center;
     line-height: 3.95;
@@ -383,6 +355,60 @@
     text-align: center;
 }
 
+
+.photo-upload-form{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // padding-left: 10%;
+}
+
+.photo-title-label{
+    text-align: center;
+    color: grey;
+    font-family: "Helvetica Neue", HelveticaNeue, Helvetica, TeXGyreHeros, FreeSans, "Nimbus Sans L", "Liberation Sans", Arial, sans-serif;
+    margin: 20px;
+}
+
+.photo-upload-title {
+    // border: 1px solid red;
+    border-radius: 3px;
+    height: 30px;
+    margin-bottom: 2%;
+    width: 79%;
+    margin-bottom: 15px; 
+}
+
+.photo-upload-location-format {
+    // border: 1px solid red;
+    border-radius: 3px;
+    height: 30px;
+    margin-bottom: 2%;
+    width: 79%;
+    margin-bottom: 15px; 
+}
+
+.photo-upload-field-format {
+    // border: 1px solid red;
+    border-radius: 3px;
+    height: 30px;
+    margin-bottom: 2%;
+    width: 79%;
+    margin-bottom: 15px; 
+}
+.photo-upload-date-format {
+    // border: 1px solid red;
+    border-radius: 3px;
+    height: 30px;
+    margin-bottom: 2%;
+    width: 79%;
+    margin-bottom: 15px; 
+}
+
+
+
 .upload-photo-button{
     justify-content: center;
     align-items: center;
@@ -393,6 +419,7 @@
     height: 40px;
     width: 80%;
     color: white;
+    margin-bottom: 15px; 
     // margin-left: 35px;
  }
 
