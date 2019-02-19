@@ -45,9 +45,9 @@ const Splash = () => {
                 {/* <div className="footer-div"> */}
                     <p>
                         365px is a clone of the original 500px photography website. Users can upload their photos
-                        <br /> and look at other photos uploaded by other users as their
+                        <br /> and look at other photos uploaded by other users as their feed.
                         <br/> Created by: Jonnatan Ortiz
-                    <br />Contact information: jonnatano94@gmail.com.</p>
+                    <br />jonnatano94@gmail.com</p>
                 {/* </div> */}
             </footer>
         </div>
