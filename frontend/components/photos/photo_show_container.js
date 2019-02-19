@@ -7,7 +7,7 @@ const mSTP = (state, ownProps ) => {
     let photo_id = ownProps.match.params.photoId;
     let photographer_id = ownProps.match.params.photographer_id;
     let photo = state.entities.photos[photo_id];
-    console.log(photo)
+    // console.log(photo);
     // let photographer_username = state.entities.photos[photo_id].username;
     // console.log(photographer_username);
     // debugger

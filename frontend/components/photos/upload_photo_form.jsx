@@ -40,7 +40,7 @@ export default class UploadForm extends React.Component {
     }
 
     render() {
-        console.log(this.state);
+        // console.log(this.state);
         return (
             <div className="photo-upload-form-div">
                 <div className="file-select-div">
