@@ -174,8 +174,9 @@
 
  .signup-inner {
    //  height: 700px;
+   // display: flex;
+   height: calc(100vh - 50px);
     width: 100%;
-    // display: flex;
     justify-content: center;
     background: #f5f6f7; 
     align-items: center;
@@ -193,7 +194,8 @@
    margin: 0 auto;
     width: 400px;
     height: 463px;
-    margin-top: 125px;
+    margin-top: 90px;
+   //  margin-top: 125px;
  }
 
  .signup-form {
