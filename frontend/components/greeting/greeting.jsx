@@ -189,12 +189,12 @@ class Greeting extends React.Component {
     
 };
 
-let modal = document.getElementById("upload-modal");
 
 window.onclick = function (event) {
     // debugger
-    if (event.target == document.getElementById("upload-modal")) {
-        document.getElementById("upload-modal").style.display = "none";
+    let modal = document.getElementById("upload-modal");
+    if (event.target == modal) {
+        modal.style.display = "none";
     }
 }
 
