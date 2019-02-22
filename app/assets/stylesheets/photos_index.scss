@@ -119,20 +119,13 @@
     width:100%;
     min-height: 30px;
     position: absolute;
-    top: 0px;
+    top: 220px;
     left: 0px;
-    // top: 20px;
-    // left: 30px;
-
+    bottom: 36px;
     // font-size: 20px;
     color: whitesmoke;
-    // // color: #3e474cf0;
-    // text-rendering: optimizeLegibility;
     font-family: "Helvetica Neue", HelveticaNeue, Helvetica, TeXGyreHeros, FreeSans, "Nimbus Sans L", "Liberation Sans", Arial, sans-serif;
-    // background-color: none; /* For browsers that do not support gradients */
-    // background-image: linear-gradient(rgba(37, 37, 38, 0.95), rgba(198, 193, 194, .1)); /* Standard syntax (must be last) */
     pointer-events: none;
-    // min-height: 50px;
     background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(37, 37, 38,0.6)));
     background: -webkit-linear-gradient(top, transparent 0%, rgba(37, 37, 38, 0.6) 100%);
     background: -moz-linear-gradient(top, transparent 0%, rgba(37, 37, 38,0.6) 100%);
@@ -140,6 +133,7 @@
     -webkit-transition: opacity 0.2s;
     -moz-transition: opacity 0.2s;
     transition: opacity 0.2s;
+    padding-left: 15px;
 }
 
 
