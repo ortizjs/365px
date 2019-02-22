@@ -152,7 +152,7 @@ class SessionForm extends React.Component {
                         </form>
                         <div className="bottom-terms-conatiner">
                             <div className="signup-tos-statement">
-                                By Signing up, you agree to our Terms of Service
+                                By Signing up, you agree to our Terms of Service. 
                             </div>
                             <div className="login-instead">
                                 Already have an account? 
