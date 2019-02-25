@@ -79,26 +79,6 @@ class Greeting extends React.Component {
         e.preventDefault();
         document.getElementById("upload-modal").style.display = 'none';
     }
-
-    // When the user clicks anywhere outside of the modal, close it
-    
-    // outsideCloseModal(e) {
-    // window.onclick = function outsideCloseModal(e) {
-    //     e.preventDefault();
-    //     // if (e.target == modal) {
-    //     if (e.target !== document.getElementById("upload-modal")) {
-    //         // modal.style.display = "none";
-    //         document.getElementById("upload-modal").style.display = 'none';
-    //     }
-    // }
-
-    // outsideCloseModal(e) {
-    //     window.onclick = function (event) {
-    //         if (event.target == modal) {
-    //             modal.style.display = "none";
-    //         }
-    //     }
-    // }
     
     
     uploadButton(){
