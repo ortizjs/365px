@@ -95,7 +95,7 @@ class Greeting extends React.Component {
         let none;
         let result = this.props.currentUser ? this.userImage() : this.sessionLinks();
         let logoutB = this.logoutButton();
-        let userFirsName = this.props.currentUser ? this.props.currentUser.first_name : none;
+        let userFirstName = this.props.currentUser ? this.props.currentUser.first_name : none;
         let linkTo = this.props.currentUser ? "/users" : "/"
         let planeIcon = this.props.currentUser ? <i className="far fa-paper-plane"></i> : none;
         let bellIcon = this.props.currentUser ? <i className="far fa-bell"></i> : none;
@@ -136,7 +136,7 @@ class Greeting extends React.Component {
                         <div className="inner-result-div">
                             {result}
                             <div className="first-name-display">
-                                {userFirsName}
+                                {userFirstName}
                             </div>
                             <div className="plane-icon-display">
                                 {planeIcon}
