@@ -130,7 +130,8 @@ class Greeting extends React.Component {
                             </a> */}
                         </div>
                         <div className="dot-icon-display">
-                            <a href="https://www.linkedin.com/in/jonnatan-ortiz/" value="LinkedIn">
+                            {/* <a href="https://www.linkedin.com/in/jonnatan-ortiz/" value="LinkedIn"> */}
+                            <a value="">
                                 {dotsIcon}
                             </a>
                         </div>
