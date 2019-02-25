@@ -152,6 +152,10 @@
     align-items: center;
     font-weight: bold;
     font-size:30px;
+    text-rendering: optimizeLegibility;
+    font-family: "Helvetica Neue",HelveticaNeue,Helvetica,TeXGyreHeros,FreeSans,"Nimbus Sans L","Liberation Sans",Arial,sans-serif;
+    color: #525558;
+    font-weight: normal;
 }
 .sub-header{
     background-color: white;
@@ -163,17 +167,31 @@
     flex-direction: column;
     justify-content: flex-end;
     line-height: 20px;
+    text-rendering: optimizeLegibility;
+    font-family: "Helvetica Neue",HelveticaNeue,Helvetica,TeXGyreHeros,FreeSans,"Nimbus Sans L","Liberation Sans",Arial,sans-serif;
+    color: #525558;
+    font-weight: normal;
 }
 .sub-header h1{
     font-weight: bold;
     font-size:30px;
     padding-left: 30px;
-    
+    text-rendering: optimizeLegibility;font-family: "Helvetica Neue",HelveticaNeue,Helvetica,TeXGyreHeros,FreeSans,"Nimbus Sans L","Liberation Sans",Arial,sans-serif;
+    color: #525558;
+    font-weight: normal;
+   
 }
 .sub-header h2{
-    color: gray;
+    // color: gray;
+    color: black;
     font-size: 20px;
     padding-left: 30px;
+    text-rendering: optimizeLegibility;
+    font-family: "Helvetica Neue",HelveticaNeue,Helvetica,TeXGyreHeros,FreeSans,"Nimbus Sans L","Liberation Sans",Arial,sans-serif;
+    // color: #525558;
+    font-weight: normal;
+    font-size: 15px;
+
 }
 
 .main-index-content{
