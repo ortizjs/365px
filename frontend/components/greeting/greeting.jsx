@@ -122,9 +122,12 @@ class Greeting extends React.Component {
                         </div>
                     <div className="header-nav">
                         <div className="discover-tag">
-                            <a className="githubtaglink" href="https://github.com/ortizjs/365px">
+                            <Link to={linkTo} className="githubtaglink">
                                 <h2 className="discover-h2">Discover</h2>
-                            </a>
+                            </Link>
+                            {/* <a className="githubtaglink" href="https://github.com/ortizjs/365px">
+                                <h2 className="discover-h2">Discover</h2>
+                            </a> */}
                         </div>
                         <div className="dot-icon-display">
                             <a href="https://www.linkedin.com/in/jonnatan-ortiz/" value="LinkedIn">
