@@ -22,8 +22,13 @@
     // padding-right: 700px; 
     // padding-bottom: 50px;
     // border: 1px solid red;
-    width: 250px;
+    width: 170px;
     height:100%;
+}
+
+.logo-image-div img {
+    width: 120%;
+    height: 100%;
 }
 
 .header-nav{
@@ -118,26 +123,24 @@
 
 }
 .avatar-image {
-    // display: flex;
-    // justify-content: center;
-    // align-content: center;
-    margin-top: 2px;
-    // width: 40px;
-    // height: 45px;
-    // margin-top: px;
-    width: 90%;
-    height: 90%;
+    margin-top: 6px;
+    width: 75%;
+    height: 75%;
     border-radius: 35px;
+//     margin-top: 2px;
+//     width: 90%;
+//     height: 90%;
 }
 
 .first-name-display {
     display: flex;
     text-align: center;
     margin-top: 13px;
-    margin-left: 7px;
+    // margin-left: 7px;
     width: 40px;
     height: 45px;
     justify-content: center;
+    cursor: not-allowed;
 }
 
 .plane-icon-display {
@@ -148,13 +151,19 @@
 }
 
 .fa-paper-plane {
-    margin-top: 8px;
-    font-size: 30px;
+    margin-top: 12px;
+    font-size: 20px;
+    cursor: not-allowed;
+    // margin-top: 8px;
+    // font-size: 30px;
 }
 
 .fa-bell {
-    margin-top: 8px;
-    font-size: 30px;
+    margin-top: 12px;
+    font-size: 20px;
+    cursor: not-allowed;
+    // margin-top: 8px;
+    // font-size: 30px;
 }
 
 .cloud-upload-icon-display {
@@ -168,8 +177,10 @@
 }
 
 .fa-cloud-upload-alt {
-    margin-top: 8px;
-    font-size: 30px;
+    margin-top: 12px;
+    font-size: 20px;
+    // margin-top: 8px;
+    // font-size: 30px;
     padding: none;
 }
 
@@ -178,7 +189,8 @@
 }
 
 .header-logout-button {
-    text-align: center;
+    text-align: start;
+    // text-align: center;
     font-size: 13px;
     font-family: "Helvetica Neue", HelveticaNeue, Helvetica, TeXGyreHeros, FreeSans, "Nimbus Sans L", "Liberation Sans", Arial, sans-serif;
     font-weight: normal;
@@ -186,6 +198,7 @@
     -webkit-font-smoothing: antialiased;
     // margin-left: 10px;
     margin-top: 5px;
+    margin-left: 5px;
     border-radius: 5px;
     border: 1px solid white;
     height: 80%;
