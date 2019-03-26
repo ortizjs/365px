@@ -8,6 +8,8 @@ class PhotoShow extends React.Component {
     componentDidMount() {
         let photoId = this.props.match.params.photoId;
         this.props.fetchPhoto(photoId);
+        let photoInfo = this.props;
+        // debugger
         // document.getElementById('heart-img').addEventListener('click', function () {
         //     document.getElementsByClassName("heart-icon-container")[0].style.display = 'block';
         //     document.getElementById('heart-img').style.display = 'none';
@@ -57,6 +59,7 @@ class PhotoShow extends React.Component {
                                 <div className="photo-show-detail-two">
                                     <img className="fa-location-marker" src="https://img.icons8.com/ios/50/000000/marker.png" value="Location"></img>
                                     <h3 className="photo-show-location">
+                                        {/* {photoInfo.photo.location} */}
                                         {this.props.photo.location}
                                     </h3>
                                     <img className="fa-calendar" src="https://img.icons8.com/ios/50/000000/calendar.png" value="calendar"></img>
