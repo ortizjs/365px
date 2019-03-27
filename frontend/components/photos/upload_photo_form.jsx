@@ -55,8 +55,7 @@ export default class UploadForm extends React.Component {
                     <button className="upload-photo-button" type="submit"> Upload a new Photo!</button>
                     {/* <button className="upload-photo-button" onClick={() => this.props.history.go(0)}> Upload a new Photo!</button> */}
                     <input placeholder="Title" type="text"
-                        className="photo-upload-title"
-                                                                                            onChange={this.handleInput("title")}/>
+                        className="photo-upload-title" onChange={this.handleInput("title")}/>
                     <input placeholder="Location" type="text"
                         className="photo-upload-location-format"
                         onChange={this.handleInput("location")}/>
