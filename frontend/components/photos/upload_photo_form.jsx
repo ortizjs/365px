@@ -18,6 +18,7 @@ export default class UploadForm extends React.Component {
 
     handleFile(e) {
         this.setState({ photoFile: e.currentTarget.files[0]});
+        
     }
 
     handleSubmit(e) {
@@ -36,7 +37,7 @@ export default class UploadForm extends React.Component {
         formData.append("photo[location]", this.state.location);
         formData.append("photo[photographer_id]", this.state.photographerId);
         formData.append("photo[attached_photo]", this.state.photoFile);
-        this.props.createPhoto(formData);
+        this.props.createPhoto(formData).then(() => this.props.history.go(0));
     }
 
     render() {
@@ -51,7 +52,8 @@ export default class UploadForm extends React.Component {
                 </div> 
                 <form className="photo-upload-form" onSubmit={this.handleSubmit}>
                     {/* <label htmlFor="photo-title" className="photo-title-label" > Title of photo </label> */}
-                    <button className="upload-photo-button" onClick={() => this.props.history.go(0)}> Upload a new Photo!</button>
+                    <button className="upload-photo-button" type="submit"> Upload a new Photo!</button>
+                    {/* <button className="upload-photo-button" onClick={() => this.props.history.go(0)}> Upload a new Photo!</button> */}
                     <input placeholder="Title" type="text"
                         className="photo-upload-title"
                                                                                             onChange={this.handleInput("title")}/>
