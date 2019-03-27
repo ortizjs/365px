@@ -10,6 +10,9 @@ class SessionForm extends React.Component {
             password: ''
         };
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleDemo = this.handleDemo.bind(this);
+        this.usernameArray = "jimmbo_123".split("");
+        this.passwordArray = "1234567".split("");
     }
 
     componentDidMount() {
@@ -27,6 +30,32 @@ class SessionForm extends React.Component {
         const user = Object.assign({}, this.state);
         this.props.processForm(user);
     }
+
+    handleDemo(e){
+        let { username } = this.state;
+        let { password } = this.state;
+        // e.preventDefault();
+        if (this.usernameArray.length > 0) {
+            this.setState(
+                {username: username + this.usernameArray.shift() }, () => {
+                    setTimeout(() => 
+                    this.handleDemo(), 100);
+                }
+            );
+        } else if (this.passwordArray.length > 0) {
+            this.setState(
+                {password: password + this.passwordArray.shift() }, () => {
+                    setTimeout(() => 
+                    this.handleDemo(), 100);
+                }
+            );
+        }
+        else {
+            this.props.processForm(this.state).then(() => this.props.history.push("/users"));
+        }
+    }
+
+
 
     renderErrors() {
         return (
@@ -74,7 +103,8 @@ class SessionForm extends React.Component {
                             <br />
                             <br />
                             <input className="guest-login-button" type="button" value="Log in as guest" 
-                            onClick={() => this.props.processForm(guest).then(() => this.props.history.push("/users"))}/>
+                            onClick={this.handleDemo}/>
+                            {/* onClick={() => this.props.processForm(guest).then(() => this.props.history.push("/users"))}/> */}
                             <div className="no-account-div">
                                 <h5 className="no-account-msg">Don't have an account? </h5>
                                 <Link to="/signup" className="no-account-signup-link">Sign Up</Link>
